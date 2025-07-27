@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
+import ScrollToTop from "./ScrollToTop";
 import Footer from "./Components/Footer";
 import Frontend from "./Components/Frontend";
 import Backend from "./Components/Backend";
@@ -151,6 +152,7 @@ function slugify(text) {
 export default function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/frontend" element={<Frontend />} />
