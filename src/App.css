@@ -1,12 +1,15 @@
 /* App.css */
 
 /* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #0e0e0e;
-  color: #eee;
+  font-family: 'Orbitron', sans-serif;
+  background: radial-gradient(circle at top, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* App Container */
@@ -17,23 +20,39 @@ body {
 /* Header Styles */
 .header {
   text-align: center;
-  margin-bottom: 2.5rem;
+  font-size: 1.2rem;
+  color: #0ff;
+  text-shadow: 0 0 8px #0ff;
+  padding: 15px;
+  border-radius: 10px;
+  background: rgba(0, 229, 255, 0.1);
+  margin-bottom: 20px;
 }
 
 .header h1 {
-  font-size: 2.8rem;
-  color: #00cba9;
-  margin-bottom: 0.5rem;
+  margin-bottom: 10px;
+  font-size: 4rem;
+  color: #000;
+  text-shadow: 0 0 10px #00e5ff, 0 0 20px #00bcd4;
 }
 
 .header p {
   font-size: 1.1rem;
-  color: #aaa;
+  color: #00e5ff;
   max-width: 600px;
   margin: 0 auto;
 }
 
 /* Section Titles */
+.sections {
+  max-height: 300px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 15px;
+  border-radius: 10px;
+  background: rgba(0, 229, 255, 0.1);
+  margin-bottom: 20px;
+}
 .section h2 {
   font-size: 1.8rem;
   margin-bottom: 1.2rem;
@@ -49,7 +68,6 @@ body {
 
 /* Card Styles */
 .card {
-  background: #1c1c1c;
   padding: 1rem;
   border-radius: 12px;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
@@ -57,8 +75,10 @@ body {
   text-align: center;
   cursor: pointer;
   text-decoration: none;
-  color: #eee;
   font-weight: 500;
+  background: linear-gradient(90deg, #00e5ff, #00bcd4);
+  color: #000;
+  font-weight: bold;
 }
 
 /* Hover Effects */
@@ -86,5 +106,108 @@ body {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.cad-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.cad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  padding: 10px;
+  background: linear-gradient(90deg, #00e5ff, #00bcd4);
+  border-radius: 8px;
+  transition: transform 0.2s;
+  
+}
+
+.cad:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 18px rgba(0, 203, 169, 0.7);
+}
+
+.cad-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cad span {
+  margin-top: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+ .games{
+  padding: 15px;
+  border-radius: 10px;
+  background: rgba(0, 229, 255, 0.1);
+  margin-bottom: 20px;
+  max-height: 300px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  
+ }
+ .games::-webkit-scrollbar {
+  display: none;
+}
+.cad {
+  display: flex;
+  animation: scroll-left 10s linear infinite;
+  display: inline-block;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.ebook{
+  padding: 15px;
+  border-radius: 10px;
+  background: rgba(0, 229, 255, 0.1);
+  margin-bottom: 20px;
+  max-height: 300px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  
+ }
+ .ebook::-webkit-scrollbar {
+  display: none;
+}
+.cadd {
+  display: flex;
+  animation: scroll-right 10s linear infinite;
+  display: inline-block;
+}
+.cadd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  padding: 10px;
+  background: linear-gradient(90deg, #00e5ff, #00bcd4);
+  border-radius: 8px;
+  transition: transform 0.2s;
+  
+}
+@keyframes scroll-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
   }
 }

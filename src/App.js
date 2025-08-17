@@ -78,42 +78,132 @@ import Cloudflare from "./Components/Cloudflare";
 import AIAgents from "./Components/AIAgents";
 import AIRedTeaming from "./Components/AIRedTeaming";
 
+const games = [
+  {
+    title: "Web Games",
+    items: [
+      { name: "Tetris", image: "DevPath.png" },
+      { name: "Snake Game", image: "DevPath.png" },
+      { name: "Flappy Bird", image: "DevPath.png" },
+      { name: "2048", image: "DevPath.png" },
+      { name: "Breakout", image: "DevPath.png" },
+    ],
+  },
+];
+const ebook =[
+  {
+    title: "eBooks",
+    items: [
+      { name: "JavaScript Guide", image: "DevPath.png" },
+      { name: "Python Basics", image: "DevPath.png" },
+      { name: "React Handbook", image: "DevPath.png" },
+      { name: "Node.js Essentials", image: "DevPath.png" },
+      { name: "SQL Fundamentals", image: "DevPath.png" },
+    ],
+  },
+]
+
 const sections = [
   {
     title: "Role-based Roadmaps",
     items: [
-      "Frontend", "Backend", "DevOps", "Full Stack", "AI Engineer", "Data Analyst", "AI and Data Scientist", "Android", "iOS-Roadmap", "PostgreSQL", "Blockchain", "QA", "Software Architect", "Cyber Security", "UX Design", "Game Developer", "Technical Writer", "MLOps"
-    ]
+      "Frontend",
+      "Backend",
+      "DevOps",
+      "Full Stack",
+      "AI Engineer",
+      "Data Analyst",
+      "AI and Data Scientist",
+      "Android",
+      // "iOS-Roadmap", // Removed since no iOSRoadmap component is imported
+      "PostgreSQL",
+      "Blockchain",
+      "QA",
+      "Software Architect",
+      "Cyber Security",
+      "UX Design",
+      "Game Developer",
+      "Technical Writer",
+      "MLOps",
+    ],
   },
   {
     title: "Skill-based Roadmaps",
     items: [
-      "SQL", "Computer Science", "React", "Vue", "Angular", "JavaScript", "Node.js", "TypeScript", "Python", "System Design", "API Design", "ASP.NET Core", "Java", "C++", "Flutter", "Spring Boot", "Go Roadmap", "Rust", "GraphQL", "Software Design and Architecture", "Design System"
-    ]
+      "SQL",
+      "Computer Science",
+      "React",
+      "Vue",
+      "Angular",
+      "JavaScript",
+      "Node.js",
+      "TypeScript",
+      "Python",
+      "System Design",
+      "API Design",
+      "ASP.NET Core",
+      "Java",
+      "C++",
+      "Flutter",
+      "Spring Boot",
+      "Go Roadmap",
+      "Rust",
+      "GraphQL",
+      "Software Design and Architecture",
+      "Design System",
+    ],
   },
   {
     title: "Project Ideas",
-    items: [
-      "Frontend Projects", "Backend Projects", "DevOps Projects"
-    ]
+    items: ["Frontend Projects", "Backend Projects", "DevOps Projects"],
   },
   {
     title: "Best Practices",
     items: [
-      "Backend Performance", "Frontend Performance", "API Security", "Code Reviews", "AWS Best Practices"
-    ]
+      "Backend Performance",
+      "Frontend Performance",
+      "API Security",
+      "Code Reviews",
+      "AWS Best Practices",
+    ],
   },
   {
     title: "Questions",
     items: [
-      "JavaScript Questions", "Node.js Questions", "React Questions", "SQL Queries Questions", "SQL Theory Questions", "Backend Questions", "Data Analyst Questions", "Full-stack Questions", "Golang Questions", "Data Science Questions", "Frontend Questions", "DevOps Questions"
-    ]
+      "JavaScript Questions",
+      "Node.js Questions",
+      "React Questions",
+      "SQL Queries Questions",
+      "SQL Theory Questions",
+      "Backend Questions",
+      "Data Analyst Questions",
+      "Full-stack Questions",
+      "Golang Questions",
+      "Data Science Questions",
+      "Frontend Questions",
+      "DevOps Questions",
+    ],
   },
   {
     title: "Other Topics",
     items: [
-      "React Native", "AWS", "Code Review", "Docker", "Kubernetes", "Linux", "MongoDB", "Prompt Engineering", "Terraform", "Data Structures", "Git and GitHub", "Redis", "PHP", "Cloudflare", "AI Agents", "AI Red Teaming"
-    ]
+      "React Native",
+      "AWS",
+      "Code Review",
+      "Docker",
+      "Kubernetes",
+      "Linux",
+      "MongoDB",
+      "Prompt Engineering",
+      "Terraform",
+      "Data Structures",
+      "Git and GitHub",
+      "Redis",
+      "PHP",
+      "Cloudflare",
+      "AI Agents",
+      "AI Red Teaming",
+    ],
   },
 ];
 
@@ -124,17 +214,66 @@ function Home() {
         <h1>DevPath</h1>
         <p>Navigate your developer journey with clarity.</p>
       </header>
-
+      <div className="games">
+  {games.map((section, index) => (
+    <div key={index} className="section">
+      <h2>{section.title}</h2>
+      <div className="cad-grid">
+        {section.items.map((item, idx) => (
+          <Link
+            key={idx}
+            to={`/${slugify(item.name)}`}
+            className="cad"
+          >
+            <img
+              src={item.image}
+              alt={item.name}
+              className="cad-image"
+            />
+            <span>{item.name}</span>
+          </Link>
+        ))}
+      </div><br></br>
+    </div>
+  ))}
+</div>
+      <br />
+  <div className="ebook">
+  {ebook.map((ebook, index) => (
+    <div key={index} className="section">
+      <h2>{ebook.title}</h2>
+      <div className="cad-grid">
+        {ebook.items.map((item, idx) => (
+          <Link
+            key={idx}
+            to={`/${slugify(item.name)}`}
+            className="cadd"
+          >
+            <img
+              src={item.image}
+              alt={item.name}
+              className="cad-image"
+            />
+            <span>{item.name}</span>
+          </Link>
+        ))}
+      </div><br></br>
+    </div>
+  ))}
+</div><br></br>
       <div className="sections">
         {sections.map((section, index) => (
           <div key={index} className="section">
             <h2>{section.title}</h2>
             <div className="card-grid">
               {section.items.map((item, idx) => (
-                <Link key={idx} to={`/${slugify(item)}`} className="card">
-                {item}
-              </Link>
-              
+                <Link
+                  key={idx}
+                  to={`/${slugify(item)}`}
+                  className="card"
+                >
+                  {item}
+                </Link>
               ))}
             </div>
           </div>
@@ -145,92 +284,100 @@ function Home() {
 }
 
 function slugify(text) {
-  return text.toLowerCase().replace(/\s+/g, '-');
+  return text.toLowerCase().replace(/\s+/g, "-").replace(/[^a-z0-9-]/g, "");
 }
-
 
 export default function App() {
   return (
     <Router>
       <ScrollToTop />
       <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/frontend" element={<Frontend />} />
-      <Route path="/backend" element={<Backend />} />
-      <Route path="/devops" element={<DevOps />} />
-      <Route path="/full-stack" element={<FullStack />} />
-      <Route path="/ai-engineer" element={<AIEngineer />} />
-      <Route path="/data-analyst" element={<DataAnalyst />} />
-      <Route path="/ai-and-data-scientist" element={<AIAndDataScience />} />
-      <Route path="/android" element={<Android />} />
-      <Route path="/iOS-Roadmap" element={<iOSRoadmap />} />
-      <Route path="/postgresql" element={<PostgreSQL />} />
-      <Route path="/blockchain" element={<Blockchain />} />
-      <Route path="/qa" element={<QA />} />
-      <Route path="/software-architect" element={<SoftwareArchitect />} />
-      <Route path="/cyber-security" element={<CyberSecurity />} />
-      <Route path="/ux-design" element={<UXDesign />} />
-      <Route path="/game-developer" element={<GameDeveloper />} />
-      <Route path="/technical-writer" element={<TechnicalWriter />} />
-      <Route path="/mlops" element={<MLOps />} />
-      <Route path="/sql" element={<SQL />} />
-      <Route path="/computer-science" element={<ComputerScience />} />
-      <Route path="/react" element={<ReactRoadmap />} />
-      <Route path="/vue" element={<VueRoadmap />} />
-      <Route path="/angular" element={<AngularRoadmap />} />
-      <Route path="/javascript" element={<JavaScriptRoadmap />} />
-      <Route path="/node.js" element={<NodejsRoadmap />} />
-      <Route path="/typescript" element={<TypeScriptRoadmap />} />
-      <Route path="/python" element={<PythonRoadmap />} />
-      <Route path="/system-design" element={<SystemDesignRoadmap />} />
-      <Route path="/api-design" element={<APIDesignRoadmap />} />
-      <Route path="/asp.net-core" element={<AspNetCoreRoadmap />} />
-      <Route path="/java" element={<JavaRoadmap />} />
-      <Route path="/c++" element={<CppRoadmap />} />
-      <Route path="/flutter" element={<FlutterRoadmap />} />
-      <Route path="/spring-boot" element={<SpringBootRoadmap />} />
-      <Route path="/go-roadmap" element={<GoRoadmap />} />
-      <Route path="/rust" element={<RustRoadmap />} />
-      <Route path="/graphql" element={<GraphQLRoadmap />} />
-      <Route path="/software-design-and-architecture" element={<SoftwareDesignArchitecture />} />
-      <Route path="/design-system" element={<DesignSystemRoadmap />} />
-      <Route path="/frontend-projects" element={<FrontendProjects />} />
-      <Route path="/backend-projects" element={<BackendProjects />} />
-      <Route path="/devops-projects" element={<DevOpsProjects />} />
-      <Route path="/backend-performance" element={<BackendPerformance />} />
-      <Route path="/frontend-performance" element={<FrontendPerformance />} />
-      <Route path="/api-security" element={<APISecurity />} />
-      <Route path="/code-reviews" element={<CodeReviews />} />
-      <Route path="/aws-best-practices" element={<AWSBestPractices />} />
-      <Route path="/javascript-questions" element={<JavaScriptQuestions />} />
-      <Route path="/node.js-questions" element={<NodeJSQuestions />} />
-      <Route path="/react-questions" element={<ReactQuestions />} />
-      <Route path="/sql-queries-questions" element={<SQLQueriesQuestions />} />
-      <Route path="/sql-theory-questions" element={<SQLTheoryQuestions />} />
-      <Route path="/backend-questions" element={<BackendQuestions />} />
-      <Route path="/data-analyst-questions" element={<DataAnalystQuestions />} />
-      <Route path="/full-stack-questions" element={<FullStackQuestions />} />
-      <Route path="/golang-questions" element={<GolangQuestions />} />
-      <Route path="/data-science-questions" element={<DataScienceQuestions />} />
-      <Route path="/frontend-questions" element={<FrontendQuestions />} />
-      <Route path="/devops-questions" element={<DevOpsQuestions />} />
-      <Route path="/react-native" element={<ReactNative />} />
-      <Route path="/aws" element={<AWS />} />
-      <Route path="/code-review" element={<CodeReview />} />
-      <Route path="/docker" element={<Docker />} />
-      <Route path="/kubernetes" element={<Kubernetes />} />
-      <Route path="/linux" element={<Linux />} />
-      <Route path="/mongodb" element={<MongoDB />} />
-      <Route path="/prompt-engineering" element={<PromptEngineering />} />
-      <Route path="/terraform" element={<Terraform />} />
-      <Route path="/data-structures" element={<DataStructures />} />
-      <Route path="/git-and-github" element={<GitGitHub />} />
-      <Route path="/redis" element={<Redis />} />
-      <Route path="/php" element={<PHP />} />
-      <Route path="/cloudflare" element={<Cloudflare />} />
-      <Route path="/ai-agents" element={<AIAgents />} />
-      <Route path="/ai-red-teaming" element={<AIRedTeaming />} />
-        {/* Add more routes like <Route path="/backend" element={<Backend />} /> */}
+        <Route path="/" element={<Home />} />
+        <Route path="/frontend" element={<Frontend />} />
+        <Route path="/backend" element={<Backend />} />
+        <Route path="/devops" element={<DevOps />} />
+        <Route path="/full-stack" element={<FullStack />} />
+        <Route path="/ai-engineer" element={<AIEngineer />} />
+        <Route path="/data-analyst" element={<DataAnalyst />} />
+        <Route path="/ai-and-data-scientist" element={<AIAndDataScience />} />
+        <Route path="/android" element={<Android />} />
+        {/* <Route path="/ios-roadmap" element={<iOSRoadmap />} /> */} {/* Uncomment if iOSRoadmap component is added */}
+        <Route path="/postgresql" element={<PostgreSQL />} />
+        <Route path="/blockchain" element={<Blockchain />} />
+        <Route path="/qa" element={<QA />} />
+        <Route path="/software-architect" element={<SoftwareArchitect />} />
+        <Route path="/cyber-security" element={<CyberSecurity />} />
+        <Route path="/ux-design" element={<UXDesign />} />
+        <Route path="/game-developer" element={<GameDeveloper />} />
+        <Route path="/technical-writer" element={<TechnicalWriter />} />
+        <Route path="/mlops" element={<MLOps />} />
+        <Route path="/sql" element={<SQL />} />
+        <Route path="/computer-science" element={<ComputerScience />} />
+        <Route path="/react" element={<ReactRoadmap />} />
+        <Route path="/vue" element={<VueRoadmap />} />
+        <Route path="/angular" element={<AngularRoadmap />} />
+        <Route path="/javascript" element={<JavaScriptRoadmap />} />
+        <Route path="/node.js" element={<NodejsRoadmap />} />
+        <Route path="/typescript" element={<TypeScriptRoadmap />} />
+        <Route path="/python" element={<PythonRoadmap />} />
+        <Route path="/system-design" element={<SystemDesignRoadmap />} />
+        <Route path="/api-design" element={<APIDesignRoadmap />} />
+        <Route path="/asp.net-core" element={<AspNetCoreRoadmap />} />
+        <Route path="/java" element={<JavaRoadmap />} />
+        <Route path="/c++" element={<CppRoadmap />} />
+        <Route path="/flutter" element={<FlutterRoadmap />} />
+        <Route path="/spring-boot" element={<SpringBootRoadmap />} />
+        <Route path="/go-roadmap" element={<GoRoadmap />} />
+        <Route path="/rust" element={<RustRoadmap />} />
+        <Route path="/graphql" element={<GraphQLRoadmap />} />
+        <Route path="/software-design-and-architecture" element={<SoftwareDesignArchitecture />} />
+        <Route path="/design-system" element={<DesignSystemRoadmap />} />
+        <Route path="/frontend-projects" element={<FrontendProjects />} />
+        <Route path="/backend-projects" element={<BackendProjects />} />
+        <Route path="/devops-projects" element={<DevOpsProjects />} />
+        <Route path="/backend-performance" element={<BackendPerformance />} />
+        <Route path="/frontend-performance" element={<FrontendPerformance />} />
+        <Route path="/api-security" element={<APISecurity />} />
+        <Route path="/code-reviews" element={<CodeReviews />} />
+        <Route path="/aws-best-practices" element={<AWSBestPractices />} />
+        <Route path="/javascript-questions" element={<JavaScriptQuestions />} />
+        <Route path="/node.js-questions" element={<NodeJSQuestions />} />
+        <Route path="/react-questions" element={<ReactQuestions />} />
+        <Route path="/sql-queries-questions" element={<SQLQueriesQuestions />} />
+        <Route path="/sql-theory-questions" element={<SQLTheoryQuestions />} />
+        <Route path="/backend-questions" element={<BackendQuestions />} />
+        <Route path="/data-analyst-questions" element={<DataAnalystQuestions />} />
+        <Route path="/full-stack-questions" element={<FullStackQuestions />} />
+        <Route path="/golang-questions" element={<GolangQuestions />} />
+        <Route path="/data-science-questions" element={<DataScienceQuestions />} />
+        <Route path="/frontend-questions" element={<FrontendQuestions />} />
+        <Route path="/devops-questions" element={<DevOpsQuestions />} />
+        <Route path="/react-native" element={<ReactNative />} />
+        <Route path="/aws" element={<AWS />} />
+        <Route path="/code-review" element={<CodeReview />} />
+        <Route path="/docker" element={<Docker />} />
+        <Route path="/kubernetes" element={<Kubernetes />} />
+        <Route path="/linux" element={<Linux />} />
+        <Route path="/mongodb" element={<MongoDB />} />
+        <Route path="/prompt-engineering" element={<PromptEngineering />} />
+        <Route path="/terraform" element={<Terraform />} />
+        <Route path="/data-structures" element={<DataStructures />} />
+        <Route path="/git-and-github" element={<GitGitHub />} />
+        <Route path="/redis" element={<Redis />} />
+        <Route path="/php" element={<PHP />} />
+        <Route path="/cloudflare" element={<Cloudflare />} />
+        <Route path="/ai-agents" element={<AIAgents />} />
+        <Route path="/ai-red-teaming" element={<AIRedTeaming />} />
+        <Route path="/tetris" element={<div>Tetris Page</div>} />
+        <Route path="/snake-game" element={<div>Snake Game Page</div>} />
+        <Route path="/flappy-bird" element={<div>Flappy Bird Page</div>} />
+        <Route path="/2048" element={<div>2048 Page</div>} />
+        <Route path="/breakout" element={<div>Breakout Page</div>} />
+        <Route path="/javascript-guide" element={<div>JavaScript Guide Page</div>} />
+        <Route path="/python-basics" element={<div>Python Basics Page</div>} />
+        <Route path="/react-handbook" element={<div>React Handbook Page</div>} />
+        <Route path="/node.js-essentials" element={<div>Node.js Essentials Page</div>} />
+        <Route path="/sql-fundamentals" element={<div>SQL Fundamentals Page</div>} />
       </Routes>
       <Footer />
     </Router>
