@@ -45,7 +45,7 @@ body {
 
 /* Section Titles */
 .sections {
-  max-height: 300px;
+  max-height: 500px;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   padding: 15px;
@@ -146,51 +146,26 @@ body {
   text-align: center;
 }
  .games{
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   padding: 15px;
   border-radius: 10px;
   background: rgba(0, 229, 255, 0.1);
   margin-bottom: 20px;
   max-height: 300px;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-  
- }
- .games::-webkit-scrollbar {
-  display: none;
-}
-.cad {
-  display: flex;
-  animation: scroll-left 10s linear infinite;
-  display: inline-block;
-}
-
-@keyframes scroll-left {
-  0% {
-    transform: translateX(0);
   }
-  100% {
-    transform: translateX(-100%);
-  }
-}
 
 .ebook{
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   padding: 15px;
   border-radius: 10px;
   background: rgba(0, 229, 255, 0.1);
   margin-bottom: 20px;
-  max-height: 300px;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-  
+  max-height: 300px;  
  }
- .ebook::-webkit-scrollbar {
-  display: none;
-}
-.cadd {
-  display: flex;
-  animation: scroll-right 10s linear infinite;
-  display: inline-block;
-}
+
+
 .cadd {
   display: flex;
   flex-direction: column;
@@ -203,11 +178,41 @@ body {
   transition: transform 0.2s;
   
 }
-@keyframes scroll-right {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(100%);
-  }
+.cadd:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 18px rgba(0, 203, 169, 0.7);
+}
+
+.roadmap{
+  padding: 15px;
+  border-radius: 10px;
+  background: rgba(0, 229, 255, 0.1);
+  margin-bottom: 20px;
+  max-height: 300px;
+  text-align: center;
+  font-size: 3rem;
+  color: #000;
+  text-shadow: 0 0 10px #00e5ff, 0 0 20px #00bcd4;
+}
+
+.games::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+.sections::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+.ebook::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+.gam{
+  padding: 15px;
+  border-radius: 10px;
+  background: rgba(0, 229, 255, 0.1);
+  margin-bottom: 20px;
+  max-height: 300px;
+  text-align: center;
+  font-size: 3rem;
+  color: #000000;
+  text-shadow: 0 0 10px #00e5ff, 0 0 20px #00bcd4;
 }

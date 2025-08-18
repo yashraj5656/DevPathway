@@ -214,7 +214,8 @@ function Home() {
         <h1>DevPath</h1>
         <p>Navigate your developer journey with clarity.</p>
       </header>
-      <div className="games">
+      <div className="gam">LEARN</div>
+<div className="games">
   {games.map((section, index) => (
     <div key={index} className="section">
       <h2>{section.title}</h2>
@@ -238,6 +239,25 @@ function Home() {
   ))}
 </div>
       <br />
+      <div className="roadmap">ROADMAP</div>
+      <div className="sections">
+        {sections.map((section, index) => (
+          <div key={index} className="section">
+            <h2>{section.title}</h2>
+            <div className="card-grid">
+              {section.items.map((item, idx) => (
+                <Link
+                  key={idx}
+                  to={`/${slugify(item)}`}
+                  className="card"
+                >
+                  {item}
+                </Link>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
   <div className="ebook">
   {ebook.map((ebook, index) => (
     <div key={index} className="section">
@@ -261,24 +281,7 @@ function Home() {
     </div>
   ))}
 </div><br></br>
-      <div className="sections">
-        {sections.map((section, index) => (
-          <div key={index} className="section">
-            <h2>{section.title}</h2>
-            <div className="card-grid">
-              {section.items.map((item, idx) => (
-                <Link
-                  key={idx}
-                  to={`/${slugify(item)}`}
-                  className="card"
-                >
-                  {item}
-                </Link>
-              ))}
-            </div>
-          </div>
-        ))}
-      </div>
+      
     </div>
   );
 }
