@@ -208,80 +208,115 @@ const sections = [
 ];
 
 function Home() {
+  const [searchTerm, setSearchTerm] = React.useState("");
+
+  // Filter function to match search term across all sections
+  const filteredSections = sections.map((section) => ({
+    ...section,
+    items: section.items.filter((item) =>
+      item.toLowerCase().includes(searchTerm.toLowerCase())
+    ),
+  }));
+
+  const filteredGames = games.map((section) => ({
+    ...section,
+    items: section.items.filter((item) =>
+      item.name.toLowerCase().includes(searchTerm.toLowerCase())
+    ),
+  }));
+
+  const filteredEbooks = ebook.map((section) => ({
+    ...section,
+    items: section.items.filter((item) =>
+      item.name.toLowerCase().includes(searchTerm.toLowerCase())
+    ),
+  }));
+
   return (
     <div className="app">
       <header className="header">
         <h1>DevPath</h1>
         <p>Navigate your developer journey with clarity.</p>
+        <input
+          type="text"
+          placeholder="Search :  roadmaps, games, or eBooks..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          className="search-bar"
+        />
       </header>
-      <div className="gam">LEARN</div>
-<div className="games">
-  {games.map((section, index) => (
-    <div key={index} className="section">
-      <h2>{section.title}</h2>
-      <div className="cad-grid">
-        {section.items.map((item, idx) => (
-          <Link
-            key={idx}
-            to={`/${slugify(item.name)}`}
-            className="cad"
-          >
-            <img
-              src={item.image}
-              alt={item.name}
-              className="cad-image"
-            />
-            <span>{item.name}</span>
-          </Link>
-        ))}
-      </div><br></br>
-    </div>
-  ))}
-</div>
-      <br />
-      <div className="roadmap">ROADMAP</div>
-      <div className="sections">
-        {sections.map((section, index) => (
+      <div className="gam">Code Lab</div>
+      <div className="games">
+        {filteredGames.map((section, index) => (
           <div key={index} className="section">
             <h2>{section.title}</h2>
-            <div className="card-grid">
+            <div className="cad-grid">
               {section.items.map((item, idx) => (
                 <Link
                   key={idx}
-                  to={`/${slugify(item)}`}
-                  className="card"
+                  to={`/${slugify(item.name)}`}
+                  className="cad"
                 >
-                  {item}
+                  <img
+                    src={item.image}
+                    alt={item.name}
+                    className="cad-image"
+                  />
+                  <span>{item.name}</span>
                 </Link>
               ))}
             </div>
+            <br />
           </div>
         ))}
       </div>
-  <div className="ebook">
-  {ebook.map((ebook, index) => (
-    <div key={index} className="section">
-      <h2>{ebook.title}</h2>
-      <div className="cad-grid">
-        {ebook.items.map((item, idx) => (
-          <Link
-            key={idx}
-            to={`/${slugify(item.name)}`}
-            className="cadd"
-          >
-            <img
-              src={item.image}
-              alt={item.name}
-              className="cad-image"
-            />
-            <span>{item.name}</span>
-          </Link>
+      <div className="roadmap">Skill Track</div>
+      <div className="sections">
+        {filteredSections.map((section, index) => (
+          section.items.length > 0 && (
+            <div key={index} className="section">
+              <h2>{section.title}</h2>
+              <div className="card-grid">
+                {section.items.map((item, idx) => (
+                  <Link
+                    key={idx}
+                    to={`/${slugify(item)}`}
+                    className="card"
+                  >
+                    {item}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )
         ))}
-      </div><br></br>
-    </div>
-  ))}
-</div><br></br>
-      
+      </div>
+      <div className="ebooks">Learn Shelf</div>
+      <div className="ebook">
+        {filteredEbooks.map((ebook, index) => (
+          <div key={index} className="section">
+            <h2>{ebook.title}</h2>
+            <div className="cad-grid">
+              {ebook.items.map((item, idx) => (
+                <Link
+                  key={idx}
+                  to={`/${slugify(item.name)}`}
+                  className="cadd"
+                >
+                  <img
+                    src={item.image}
+                    alt={item.name}
+                    className="cad-image"
+                  />
+                  <span>{item.name}</span>
+                </Link>
+              ))}
+            </div>
+            <br />
+          </div>
+        ))}
+      </div>
+      <br />
     </div>
   );
 }

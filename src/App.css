@@ -1,11 +1,11 @@
-/* App.css */
+/* App.css - Dark Theme Integrated */
 
 /* Global Styles */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
 body {
   font-family: 'Orbitron', sans-serif;
-  background: radial-gradient(circle at top, #0f2027, #203a43, #2c5364);
-  color: #fff;
+  background: radial-gradient(circle at top, #0f2027, #1c1c1c, #282c34);
+  color: #eee;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -15,17 +15,22 @@ body {
 /* App Container */
 .app {
   padding: 2rem;
+  max-width: 900px;
+  margin: 2rem auto;
+  background-color: #1c1c1c;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
 }
 
 /* Header Styles */
 .header {
   text-align: center;
   font-size: 1.2rem;
-  color: #0ff;
-  text-shadow: 0 0 8px #0ff;
+  color: #00cba9;
+  text-shadow: 0 0 8px rgba(0, 203, 169, 0.7);
   padding: 15px;
-  border-radius: 10px;
-  background: rgba(0, 229, 255, 0.1);
+  border-radius: 40px;
+  background: rgba(0, 203, 169, 0.1);
   margin-bottom: 20px;
 }
 
@@ -33,14 +38,15 @@ body {
   margin-bottom: 10px;
   font-size: 4rem;
   color: #000;
-  text-shadow: 0 0 10px #00e5ff, 0 0 20px #00bcd4;
+  text-shadow: 0 0 10px #00cba9, 0 0 20px rgba(0, 203, 169, 0.7);
 }
 
 .header p {
-  font-size: 1.1rem;
-  color: #00e5ff;
+  font-size: 1.5rem;
+  color: #eee;
   max-width: 600px;
   margin: 0 auto;
+  text-shadow: 0 0 10px #00cba9, 0 0 20px rgba(0, 203, 169, 0.7);
 }
 
 /* Section Titles */
@@ -50,13 +56,14 @@ body {
   -webkit-overflow-scrolling: touch;
   padding: 15px;
   border-radius: 10px;
-  background: rgba(0, 229, 255, 0.1);
+  background: rgba(0, 203, 169, 0.1);
   margin-bottom: 20px;
 }
 .section h2 {
   font-size: 1.8rem;
   margin-bottom: 1.2rem;
   color: #00cba9;
+  text-align: center;
 }
 
 /* Grid Layout for Cards */
@@ -70,22 +77,20 @@ body {
 .card {
   padding: 1rem;
   border-radius: 12px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
-  transition: transform 0.25s, box-shadow 0.25s;
+  box-shadow: 0 0 10px rgba(0, 203, 169, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
   text-align: center;
   cursor: pointer;
   text-decoration: none;
   font-weight: 500;
-  background: linear-gradient(90deg, #00e5ff, #00bcd4);
+  background: linear-gradient(90deg, #00e5ff, #00bcd4);;
   color: #000;
-  font-weight: bold;
 }
 
 /* Hover Effects */
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 18px rgba(0, 203, 169, 0.7);
-  background-color: #161616;
+  box-shadow: 0 0 20px rgba(0, 203, 169, 0.7);
 }
 
 /* Optional Logo Animation (if used) */
@@ -120,17 +125,17 @@ body {
   flex-direction: column;
   align-items: center;
   text-decoration: none;
-  color: #000;
   padding: 10px;
-  background: linear-gradient(90deg, #00e5ff, #00bcd4);
-  border-radius: 8px;
-  transition: transform 0.2s;
-  
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 203, 169, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  background: linear-gradient(90deg, #00e5ff, #00bcd4);;
+  color: #000;
 }
 
 .cad:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 18px rgba(0, 203, 169, 0.7);
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 203, 169, 0.7);
 }
 
 .cad-image {
@@ -144,75 +149,97 @@ body {
   margin-top: 10px;
   font-size: 16px;
   text-align: center;
+  color: #000;
 }
- .games{
+
+.games {
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   padding: 15px;
   border-radius: 10px;
-  background: rgba(0, 229, 255, 0.1);
+  background: rgba(0, 203, 169, 0.1);
   margin-bottom: 20px;
   max-height: 300px;
-  }
+}
 
-.ebook{
+.ebook {
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   padding: 15px;
   border-radius: 10px;
-  background: rgba(0, 229, 255, 0.1);
+  background: rgba(0, 203, 169, 0.1);
   margin-bottom: 20px;
-  max-height: 300px;  
- }
-
+  max-height: 300px;
+}
 
 .cadd {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-decoration: none;
-  color: #000;
   padding: 10px;
-  background: linear-gradient(90deg, #00e5ff, #00bcd4);
-  border-radius: 8px;
-  transition: transform 0.2s;
-  
-}
-.cadd:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 18px rgba(0, 203, 169, 0.7);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 203, 169, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  background: linear-gradient(90deg, #00e5ff, #00bcd4);;
+  color: #000;
 }
 
-.roadmap{
+.cadd:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 203, 169, 0.7);
+}
+
+.roadmap {
   padding: 15px;
   border-radius: 10px;
-  background: rgba(0, 229, 255, 0.1);
   margin-bottom: 20px;
   max-height: 300px;
-  text-align: center;
-  font-size: 3rem;
-  color: #000;
-  text-shadow: 0 0 10px #00e5ff, 0 0 20px #00bcd4;
+  text-align: left;
+  font-size: 2rem;
+  color: #00cba9;;
+  
+}
+.ebooks{
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  max-height: 300px;
+  text-align: left;
+  font-size: 2rem;
+  color: #00cba9;;
 }
 
-.games::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Edge */
-}
-.sections::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Edge */
-}
+.games::-webkit-scrollbar,
+.sections::-webkit-scrollbar,
 .ebook::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Edge */
 }
 
-.gam{
+.gam {
   padding: 15px;
   border-radius: 10px;
-  background: rgba(0, 229, 255, 0.1);
   margin-bottom: 20px;
   max-height: 300px;
-  text-align: center;
-  font-size: 3rem;
-  color: #000000;
-  text-shadow: 0 0 10px #00e5ff, 0 0 20px #00bcd4;
+  text-align: left;
+  font-size: 2rem;
+  color: #00cba9;;
+  
+}
+
+.search-bar {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #282c34;
+  color: #eee;
+  font-family: 'Orbitron', sans-serif;
+  box-shadow: 0 0 10px rgba(0, 203, 169, 0.2);
+}
+
+.search-bar::placeholder {
+  color: #ccc;
 }
