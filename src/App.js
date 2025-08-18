@@ -143,7 +143,7 @@ const sections = [
       "API Design",
       "ASP.NET Core",
       "Java",
-      "C++",
+      "Cpp",
       "Flutter",
       "Spring Boot",
       "Go Roadmap",
@@ -362,7 +362,7 @@ export default function App() {
         <Route path="/api-design" element={<APIDesignRoadmap />} />
         <Route path="/asp.net-core" element={<AspNetCoreRoadmap />} />
         <Route path="/java" element={<JavaRoadmap />} />
-        <Route path="/c++" element={<CppRoadmap />} />
+        <Route path="/cpp" element={<CppRoadmap />} />
         <Route path="/flutter" element={<FlutterRoadmap />} />
         <Route path="/spring-boot" element={<SpringBootRoadmap />} />
         <Route path="/go-roadmap" element={<GoRoadmap />} />
