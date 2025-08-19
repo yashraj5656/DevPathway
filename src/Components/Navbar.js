@@ -1,29 +1,36 @@
-// src/Components/Navbar.js
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <nav className="navbar">
       <div className="nav-logo">
         <Link to="/">DevPath</Link>
       </div>
-      <ul className="nav-links">
+
+      {/* Hamburger button */}
+      <div
+        className="hamburger"
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        ☰
+      </div>
+
+      <ul className={`nav-links ${isOpen ? "open" : ""}`}>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
         </li>
         <li>
-          <a href="#roadmap">Roadmaps</a>
+          <a href="#roadmap" onClick={() => setIsOpen(false)}>Roadmaps</a>
         </li>
         <li>
-          <a href="#games">Games</a>
+          <a href="#games" onClick={() => setIsOpen(false)}>Games</a>
         </li>
         <li>
-          <a href="#ebooks">eBooks</a>
-        </li>
-        <li>
-            <div><br></br></div>
+          <a href="#ebooks" onClick={() => setIsOpen(false)}>eBooks</a>
         </li>
       </ul>
     </nav>
