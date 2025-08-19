@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
 import ScrollToTop from "./ScrollToTop";
+import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import Frontend from "./Components/Frontend";
 import Backend from "./Components/Backend";
@@ -208,46 +209,17 @@ const sections = [
 ];
 
 function Home() {
-  const [searchTerm, setSearchTerm] = React.useState("");
-
-  // Filter function to match search term across all sections
-  const filteredSections = sections.map((section) => ({
-    ...section,
-    items: section.items.filter((item) =>
-      item.toLowerCase().includes(searchTerm.toLowerCase())
-    ),
-  }));
-
-  const filteredGames = games.map((section) => ({
-    ...section,
-    items: section.items.filter((item) =>
-      item.name.toLowerCase().includes(searchTerm.toLowerCase())
-    ),
-  }));
-
-  const filteredEbooks = ebook.map((section) => ({
-    ...section,
-    items: section.items.filter((item) =>
-      item.name.toLowerCase().includes(searchTerm.toLowerCase())
-    ),
-  }));
-
   return (
     <div className="app">
-      <header className="header">
-        <h1>DevPath</h1>
-        <p>Navigate your developer journey with clarity.</p>
-        <input
-          type="text"
-          placeholder="Search :  roadmaps, games, or eBooks..."
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-          className="search-bar"
-        />
-      </header>
-      <div className="gam">Code Lab</div>
+      
+     {/* <header className="header">
+       <h1>DevPath</h1>
+        
+      </header>*/} 
+
+      <div id="games" className="gam">Code Lab</div>
       <div className="games">
-        {filteredGames.map((section, index) => (
+        {games.map((section, index) => (
           <div key={index} className="section">
             <h2>{section.title}</h2>
             <div className="cad-grid">
@@ -270,9 +242,10 @@ function Home() {
           </div>
         ))}
       </div>
-      <div className="roadmap">Skill Track</div>
+
+      <div id="roadmap" className="roadmap">Skill Track</div>
       <div className="sections">
-        {filteredSections.map((section, index) => (
+        {sections.map((section, index) => (
           section.items.length > 0 && (
             <div key={index} className="section">
               <h2>{section.title}</h2>
@@ -291,9 +264,10 @@ function Home() {
           )
         ))}
       </div>
-      <div className="ebooks">Learn Shelf</div>
+
+      <div id="ebooks" className="ebooks">Learn Shelf</div>
       <div className="ebook">
-        {filteredEbooks.map((ebook, index) => (
+        {ebook.map((ebook, index) => (
           <div key={index} className="section">
             <h2>{ebook.title}</h2>
             <div className="cad-grid">
@@ -321,6 +295,7 @@ function Home() {
   );
 }
 
+
 function slugify(text) {
   return text.toLowerCase().replace(/\s+/g, "-").replace(/[^a-z0-9-]/g, "");
 }
@@ -329,6 +304,7 @@ export default function App() {
   return (
     <Router>
       <ScrollToTop />
+      <Navbar />  
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/frontend" element={<Frontend />} />
