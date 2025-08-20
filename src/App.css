@@ -301,6 +301,6 @@ body {
   }
 
   .sections, .games, .ebook {
-    max-height: none; /* Allow full height on mobile */
+    max-height: 500px; /* Allow full height on mobile */
   }
 }
