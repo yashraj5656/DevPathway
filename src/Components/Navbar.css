@@ -7,7 +7,7 @@
   color: #fff;
   padding: 10px 20px;
   position: fixed;
-  width: 100%;
+  width:100%;
   top: 0;
   z-index: 1000;
 }
@@ -21,7 +21,7 @@
 }
 
 /* Links */
-.nav-links {
+.nav-links{
   list-style: none;
   display: flex;
   gap: 20px;

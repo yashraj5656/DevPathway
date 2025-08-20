@@ -33,6 +33,8 @@ export default function Navbar() {
           <a href="#ebooks" onClick={() => setIsOpen(false)}>eBooks</a>
         </li>
         <li><br></br></li>
+        <li><br></br></li>
+        <li><br></br></li>
       </ul>
     </nav>
   );
