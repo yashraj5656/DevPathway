@@ -34,7 +34,7 @@ export default function Navbar() {
         </li>
         <li><br></br></li>
         <li><br></br></li>
-        <li><br></br></li>
+        
       </ul>
     </nav>
   );
