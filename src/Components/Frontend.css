@@ -58,7 +58,7 @@
 @media (max-width: 768px) {
 .frontend-container {
   max-width: 100%;
-  margin: 2rem auto;
+  margin: 5rem auto;
   padding: 1rem;
 }
 
@@ -70,10 +70,10 @@
   font-size: 1rem;
 }
 
-.frontend-list {
+/*.frontend-list {
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 0.8rem;
-}
+}*/
 
 .frontend-list li {
   padding: 0.8rem;
