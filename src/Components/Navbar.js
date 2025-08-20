@@ -16,7 +16,7 @@ export default function Navbar() {
         className="hamburger"
         onClick={() => setIsOpen(!isOpen)}
       >
-        ☰
+        ☰<li><br></br></li><li><br></br></li>
       </div>
 
       <ul className={`nav-links ${isOpen ? "open" : ""}`}>
