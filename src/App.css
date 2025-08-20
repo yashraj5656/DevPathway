@@ -19,8 +19,8 @@ body {
 /* App Container */
 .app {
   padding: 2rem;
-  max-width: 1000px;
-  width: 1000px;
+  max-width: 900px;
+  width: 900px;
   margin: 6rem auto;
   background-color: #1c1c1c;
   border-radius: 12px;
@@ -42,7 +42,7 @@ body {
 .header h1 {
   margin-bottom: 10px;
   font-size: 4rem;
-  color: #000;
+  color: #00cba9;
   text-shadow: 0 0 10px #00cba9, 0 0 20px rgba(0, 203, 169, 0.7);
 }
 
@@ -171,6 +171,8 @@ body {
   background: rgba(0, 203, 169, 0.1);
   margin-bottom: 20px;
   max-height: 300px;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 .ebook {
@@ -181,6 +183,8 @@ body {
   background: rgba(0, 203, 169, 0.1);
   margin-bottom: 20px;
   max-height: 300px;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 .cadd {
@@ -205,20 +209,31 @@ body {
   padding: 15px;
   border-radius: 10px;
   margin-bottom: 20px;
-  max-height: 300px;
   text-align: left;
   font-size: 2rem;
   color: #00cba9;
-  
+  background-color: #1c1c1c;
 }
 .ebooks{
   padding: 15px;
   border-radius: 10px;
   margin-bottom: 20px;
-  max-height: 300px;
   text-align: left;
   font-size: 2rem;
   color: #00cba9;
+  background-color: #1c1c1c;
+}
+
+.sections {
+  max-height: 500px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 15px;
+  border-radius: 10px;
+  background: rgba(0, 203, 169, 0.1);
+  margin-bottom: 20px;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 .games::-webkit-scrollbar,
@@ -231,10 +246,60 @@ body {
   padding: 15px;
   border-radius: 10px;
   margin-bottom: 20px;
-  max-height: 300px;
   text-align: left;
   font-size: 2rem;
-  color: #00cba9;;
-  
+  color: #00cba9;
+  background-color: #1c1c1c;
 }
 
+/* Media Queries for Mobile Friendliness */
+@media (max-width: 768px) {
+  .app {
+    padding: 1rem;
+    margin: 2rem auto;
+  }
+
+  .header h1 {
+    font-size: 2.5rem;
+  }
+
+  .header p {
+    font-size: 1.2rem;
+  }
+
+  .section h2 {
+    font-size: 1.5rem;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.8rem;
+  }
+
+  .card {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .cad-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+  }
+
+  .cad-image {
+    height: 120px;
+  }
+
+  .cad span, .cadd span {
+    font-size: 14px;
+  }
+
+  .roadmap, .ebooks, .gam {
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+
+  .sections, .games, .ebook {
+    max-height: none; /* Allow full height on mobile */
+  }
+}

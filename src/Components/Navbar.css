@@ -1,7 +1,7 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: left;
   background: rgba(34, 34, 34, 0.7);
   backdrop-filter: blur(8px);
   color: #fff;
@@ -9,7 +9,7 @@
   position: fixed;
   top: 0;
   z-index: 1000;
-  width: 1024px;
+  width: 900px;
 }
 
 /* Logo */

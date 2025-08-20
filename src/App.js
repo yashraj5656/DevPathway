@@ -136,12 +136,12 @@ const sections = [
       "Vue",
       "Angular",
       "JavaScript",
-      "Node.js",
+      "Nodejs",
       "TypeScript",
       "Python",
       "System Design",
       "API Design",
-      "ASP.NET Core",
+      "ASPNET Core",
       "Java",
       "Cpp",
       "Flutter",
@@ -330,12 +330,12 @@ export default function App() {
         <Route path="/vue" element={<VueRoadmap />} />
         <Route path="/angular" element={<AngularRoadmap />} />
         <Route path="/javascript" element={<JavaScriptRoadmap />} />
-        <Route path="/node.js" element={<NodejsRoadmap />} />
+        <Route path="/nodejs" element={<NodejsRoadmap />} />
         <Route path="/typescript" element={<TypeScriptRoadmap />} />
         <Route path="/python" element={<PythonRoadmap />} />
         <Route path="/system-design" element={<SystemDesignRoadmap />} />
         <Route path="/api-design" element={<APIDesignRoadmap />} />
-        <Route path="/asp.net-core" element={<AspNetCoreRoadmap />} />
+        <Route path="/aspnet-core" element={<AspNetCoreRoadmap />} />
         <Route path="/java" element={<JavaRoadmap />} />
         <Route path="/cpp" element={<CppRoadmap />} />
         <Route path="/flutter" element={<FlutterRoadmap />} />

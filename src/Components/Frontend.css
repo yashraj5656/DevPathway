@@ -1,8 +1,7 @@
 /* Frontend.css - Dark Theme Styled */
 
 .frontend-container {
-    max-width: 1000px;
-    width: 1000px;
+    max-width: 900px;
     margin: 6rem auto;
     padding: 2rem;
     background-color: #1c1c1c;
