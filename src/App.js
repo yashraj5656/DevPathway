@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
 import ScrollToTop from "./ScrollToTop";
 import Navbar from "./Components/Navbar";
-import Footer from "./Components/Footer";
 import Frontend from "./Components/Frontend";
 import Backend from "./Components/Backend";
 import DevOps from "./Components/DevOps";
@@ -393,7 +392,7 @@ export default function App() {
         <Route path="/node.js-essentials" element={<div>Node.js Essentials Page</div>} />
         <Route path="/sql-fundamentals" element={<div>SQL Fundamentals Page</div>} />
       </Routes>
-      <Footer />
+      
     </Router>
   );
 }

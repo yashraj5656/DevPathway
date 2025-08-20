@@ -7,9 +7,9 @@
   color: #fff;
   padding: 10px 20px;
   position: fixed;
-  width:100%;
   top: 0;
   z-index: 1000;
+  width: 1024px;
 }
 
 /* Logo */
@@ -44,7 +44,6 @@
   font-size: 2rem;
   cursor: pointer;
   color: white;
-  padding-left: 10%;
 }
 
 /* Mobile styles */
