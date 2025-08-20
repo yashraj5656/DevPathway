@@ -257,9 +257,7 @@ body {
   .app {
     padding: 1rem;
     margin: 2rem auto;
-    width: 100%;
-    justify-content: center;
-    justify-items: center;
+    width: max-content;
   }
 
   .header h1 {
@@ -303,6 +301,6 @@ body {
   }
 
   .sections, .games, .ebook {
-    max-height: 400px; /* Allow full height on mobile */
+    max-height: 300px; /* Allow full height on mobile */
   }
 }
