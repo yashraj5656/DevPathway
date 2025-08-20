@@ -7,9 +7,7 @@ export default function Navbar() {
 
   return (
     <nav className="navbar">
-      <div className="nav-logo">
-        <Link to="/">DevPath</Link>
-      </div>
+
 
       {/* Hamburger button */}
       <div
@@ -17,6 +15,9 @@ export default function Navbar() {
         onClick={() => setIsOpen(!isOpen)}
       >
         ☰
+      </div>
+      <div className="nav-logo">
+        <Link to="/">DevPath</Link>
       </div>
 
       <ul className={`nav-links ${isOpen ? "open" : ""}`}>
