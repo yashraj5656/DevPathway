@@ -54,6 +54,7 @@
 @media (max-width: 768px) {
   .navbar{
     width:max-content;
+    justify-content: space-between;
   }
   .hamburger {
     display: block;
