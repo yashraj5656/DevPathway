@@ -77,6 +77,11 @@ import PHP from "./Components/PHP";
 import Cloudflare from "./Components/Cloudflare";
 import AIAgents from "./Components/AIAgents";
 import AIRedTeaming from "./Components/AIRedTeaming";
+import ProductDescription from "./Components/ProductDescription"; 
+import PythonBasics from "./Components/PythonBasics";
+import ReactHandbook from "./Components/ReactHandbook";
+import NodejsEssentials from "./Components/NodejsEssentials";
+import SqlFundamentals from "./Components/SqlFundamentals";
 
 const games = [
   {
@@ -386,11 +391,11 @@ export default function App() {
         <Route path="/flappy-bird" element={<div>Flappy Bird Page</div>} />
         <Route path="/2048" element={<div>2048 Page</div>} />
         <Route path="/breakout" element={<div>Breakout Page</div>} />
-        <Route path="/javascript-guide" element={<div>JavaScript Guide Page</div>} />
-        <Route path="/python-basics" element={<div>Python Basics Page</div>} />
-        <Route path="/react-handbook" element={<div>React Handbook Page</div>} />
-        <Route path="/node.js-essentials" element={<div>Node.js Essentials Page</div>} />
-        <Route path="/sql-fundamentals" element={<div>SQL Fundamentals Page</div>} />
+        <Route path="/javascript-guide" element={<ProductDescription />} /> 
+        <Route path="/python-basics" element={<PythonBasics />} />
+        <Route path="/react-handbook" element={<ReactHandbook />} /> 
+        <Route path="/nodejs-essentials" element={<NodejsEssentials />} />
+        <Route path="/sql-fundamentals" element={<SqlFundamentals />} />
       </Routes>
       
     </Router>
