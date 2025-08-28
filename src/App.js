@@ -82,16 +82,21 @@ import PythonBasics from "./Components/PythonBasics";
 import ReactHandbook from "./Components/ReactHandbook";
 import NodejsEssentials from "./Components/NodejsEssentials";
 import SqlFundamentals from "./Components/SqlFundamentals";
+import JavaScriptQuiz from "./Components/JavaScriptQuiz";
+import PythonQuiz from "./Components/PythonQuiz";
+import BashQuiz from "./Components/BashQuiz";
+import TypeScriptQuiz from "./Components/TypeScriptQuiz";
+import DockerQuiz from "./Components/DockerQuiz"
 
 const games = [
   {
-    title: "Web Games",
+    title: "Quiz Games",
     items: [
-      { name: "Tetris", image: "DevPath.png" },
-      { name: "Snake Game", image: "DevPath.png" },
-      { name: "Flappy Bird", image: "DevPath.png" },
-      { name: "2048", image: "DevPath.png" },
-      { name: "Breakout", image: "DevPath.png" },
+      { name: "Python Quiz", image: "DevPath.png" },
+      { name: "Bash Quiz", image: "DevPath.png" },
+      { name: "TypeScript Quiz", image: "DevPath.png" },
+      { name: "Docker Quiz", image: "DevPath.png" },
+      { name: "JavaScript Quiz", image: "DevPath.png" },
     ],
   },
 ];
@@ -221,7 +226,7 @@ function Home() {
         
       </header>*/} 
 
-      <div id="games" className="gam">Code Lab</div>
+      <div id="games" className="gam">Quiz Lab</div>
       <div className="games">
         {games.map((section, index) => (
           <div key={index} className="section">
@@ -386,11 +391,11 @@ export default function App() {
         <Route path="/cloudflare" element={<Cloudflare />} />
         <Route path="/ai-agents" element={<AIAgents />} />
         <Route path="/ai-red-teaming" element={<AIRedTeaming />} />
-        <Route path="/tetris" element={<div>Tetris Page</div>} />
-        <Route path="/snake-game" element={<div>Snake Game Page</div>} />
-        <Route path="/flappy-bird" element={<div>Flappy Bird Page</div>} />
-        <Route path="/2048" element={<div>2048 Page</div>} />
-        <Route path="/breakout" element={<div>Breakout Page</div>} />
+        <Route path="/python-quiz" element={<PythonQuiz />} />
+        <Route path="/bash-quiz" element={<BashQuiz />} />
+        <Route path="/typescript-quiz" element={<TypeScriptQuiz />} />
+        <Route path="/docker-quiz" element={<DockerQuiz />} />
+        <Route path="/javascript-quiz" element={<JavaScriptQuiz />} />
         <Route path="/javascript-guide" element={<ProductDescription />} /> 
         <Route path="/python-basics" element={<PythonBasics />} />
         <Route path="/react-handbook" element={<ReactHandbook />} /> 

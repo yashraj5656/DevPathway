@@ -7,8 +7,6 @@ export default function Navbar() {
 
   return (
     <nav className="navbar">
-
-
       {/* Hamburger button */}
       <div
         className="hamburger"
@@ -25,16 +23,14 @@ export default function Navbar() {
           <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
         </li>
         <li>
-          <a href="#roadmap" onClick={() => setIsOpen(false)}>Roadmaps</a>
+          <Link to="/roadmaps" onClick={() => setIsOpen(false)}>Roadmaps</Link>
         </li>
         <li>
-          <a href="#games" onClick={() => setIsOpen(false)}>Games</a>
+          <Link to="/games" onClick={() => setIsOpen(false)}>Games</Link>
         </li>
         <li>
-          <a href="#ebooks" onClick={() => setIsOpen(false)}>eBooks</a>
+          <Link to="/ebooks" onClick={() => setIsOpen(false)}>eBooks</Link>
         </li>
-
-        
       </ul>
     </nav>
   );
