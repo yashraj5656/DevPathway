@@ -56,12 +56,8 @@ const questions = [
     correctAnswer: "10",
     explanation: "The `let` keyword is block-scoped. The `x` inside the block is a different variable from the outer `x`. The outer `x` remains `10` and is logged."
   },
-  {
-    question: "What is the result of this expression: `let name = 'World'; `Hello ${name}!`;`?",
-    options: ["Hello World!", "Hello ${name}!", "undefined", "SyntaxError"],
-    correctAnswer: "Hello World!",
-    explanation: "Template literals use backticks and `${}` to interpolate variables. The expression `` `Hello ${name}!` `` evaluates to `'Hello World!'`."
-  }
+
+
 ];
 
 const JavaScriptQuiz = () => {
