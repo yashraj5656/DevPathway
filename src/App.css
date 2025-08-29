@@ -288,9 +288,9 @@ body {
     gap: 15px;
   }
 
-  /*.cad-image {
-    height: 140px;
-  }*/
+  .cad-image {
+    height: 150px;
+  }
 
   .cad span, .cadd span {
     font-size: 14px;
