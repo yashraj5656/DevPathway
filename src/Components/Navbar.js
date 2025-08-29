@@ -12,7 +12,7 @@ export default function Navbar() {
         className="hamburger"
         onClick={() => setIsOpen(!isOpen)}
       >
-        ☰
+      {/*  ☰ */}
       </div>
       <div className="nav-logo">
         <Link to="/">Zyqentra</Link>

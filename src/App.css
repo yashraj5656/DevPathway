@@ -304,5 +304,8 @@ body {
   .sections, .games, .ebook {
     max-height: 300px; /* Allow full height on mobile */
   }
+  .sections{
+    max-height: 370px; /* Allow full height on mobile */
+  }
 }
 
