@@ -15,7 +15,7 @@ export default function Navbar() {
         ☰
       </div>
       <div className="nav-logo">
-        <Link to="/">DevPath</Link>
+        <Link to="/">Zyqentra</Link>
       </div>
 
       <ul className={`nav-links ${isOpen ? "open" : ""}`}>
@@ -23,13 +23,13 @@ export default function Navbar() {
           <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
         </li>
         <li>
-          <Link to="/roadmaps" onClick={() => setIsOpen(false)}>Roadmaps</Link>
+          <Link to="/" onClick={() => setIsOpen(false)}>Roadmaps</Link>
         </li>
         <li>
-          <Link to="/games" onClick={() => setIsOpen(false)}>Games</Link>
+          <Link to="/" onClick={() => setIsOpen(false)}>Games</Link>
         </li>
         <li>
-          <Link to="/ebooks" onClick={() => setIsOpen(false)}>eBooks</Link>
+          <Link to="/" onClick={() => setIsOpen(false)}>eBooks</Link>
         </li>
       </ul>
     </nav>

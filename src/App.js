@@ -92,11 +92,11 @@ const games = [
   {
     title: "Quiz Games",
     items: [
-      { name: "Python Quiz", image: "DevPath.png" },
-      { name: "Bash Quiz", image: "DevPath.png" },
-      { name: "TypeScript Quiz", image: "DevPath.png" },
-      { name: "Docker Quiz", image: "DevPath.png" },
-      { name: "JavaScript Quiz", image: "DevPath.png" },
+      { name: "Python Quiz", image: "PY.png" },
+      { name: "Bash Quiz", image: "BASH.png" },
+      { name: "TypeScript Quiz", image: "TS.png" },
+      { name: "Docker Quiz", image: "DK.png" },
+      { name: "JavaScript Quiz", image: "JS.png" },
     ],
   },
 ];
@@ -104,11 +104,11 @@ const ebook =[
   {
     title: "eBooks",
     items: [
-      { name: "JavaScript Guide", image: "DevPath.png" },
-      { name: "Python Basics", image: "DevPath.png" },
-      { name: "React Handbook", image: "DevPath.png" },
-      { name: "Node.js Essentials", image: "DevPath.png" },
-      { name: "SQL Fundamentals", image: "DevPath.png" },
+      { name: "JavaScript Guide", image: "JS.png" },
+      { name: "Python Basics", image: "P.png" },
+      { name: "React Handbook", image: "R.png" },
+      { name: "Node.js Essentials", image: "NJS.png" },
+      { name: "SQL Fundamentals", image: "SQL.png" },
     ],
   },
 ]
@@ -222,7 +222,7 @@ function Home() {
     <div className="app">
       
      {/* <header className="header">
-       <h1>DevPath</h1>
+       <h1>Zyqentra</h1>
         
       </header>*/} 
 
