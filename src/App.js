@@ -93,10 +93,10 @@ const games = [
     title: "Quiz Games",
     items: [
       { name: "Python Quiz", image: "PY.png" },
-      { name: "Bash Quiz", image: "BASH.png" },
-      { name: "TypeScript Quiz", image: "TS.png" },
+      { name: "Bash Quiz", image: "BA.png" },
+      { name: "TypeScript Quiz", image: "TSP.png" },
       { name: "Docker Quiz", image: "DK.png" },
-      { name: "JavaScript Quiz", image: "JS.png" },
+      { name: "JavaScript Quiz", image: "JSP.png" },
     ],
   },
 ];
