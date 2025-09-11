@@ -1,3 +1,4 @@
+/* Base Footer Styles */
 .footer {
   background-color: #000;
   color: #00cba9;
@@ -6,7 +7,7 @@
   width: 100%;
   font-family: 'Orbitron', sans-serif;
   box-shadow: 0 -2px 20px rgba(0, 203, 169, 0.15);
-  margin-right: 2rem;
+  margin-right: 0; /* remove margin to fit mobile */
 }
 
 .footer-content {
@@ -14,14 +15,12 @@
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 2rem;
-  margin-right: 2rem;
 }
 
 .footer-brand h2 {
   font-size: 2rem;
   color: #00cba9;
   margin-bottom: 1rem;
- 
 }
 
 .footer-brand p {
@@ -35,7 +34,6 @@
 .footer-features {
   list-style: none;
   padding-left: 0;
-  font-family: 'Courier New', Courier, monospace;
 }
 
 .footer-features li {
@@ -49,14 +47,12 @@
 
 .footer-features li:hover {
   transform: translateX(6px);
-  
 }
 
 .footer-links h4,
 .footer-social h4 {
   margin-bottom: 1rem;
   color: #00cba9;
-
 }
 
 .footer-links ul {
@@ -83,9 +79,8 @@
 .footer-social .social-icons {
   display: flex;
   gap: 1rem;
-  margin-right: 1.7rem;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: flex-start;
+  flex-direction: column; /* row layout for desktop */
 }
 
 .footer-social a {
@@ -97,7 +92,6 @@
 .footer-social a:hover {
   color: #00cba9;
   transform: scale(1.2);
-
 }
 
 .footer-bottom {
@@ -120,15 +114,51 @@
   text-shadow: 0 0 10px #00cba9, 0 0 20px rgba(0, 203, 169, 0.7);
 }
 
-/* 📱 Mobile responsiveness */
+/* 📱 Mobile Responsiveness */
 @media (max-width: 768px) {
   .footer-content {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-  
+
+  .footer-brand h2 {
+    font-size: 1.6rem;
+  }
+
+  .footer-brand p,
+  .footer-links a,
+  .footer-features li {
+    font-size: 0.85rem;
+  }
+
   .footer-social .social-icons {
     justify-content: center;
+    flex-direction: row; /* keep icons in row for better fit */
+    gap: 1rem;
+  }
+
+  .footer {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-brand h2 {
+    font-size: 1.4rem;
+  }
+
+  .footer-brand p,
+  .footer-links a,
+  .footer-features li {
+    font-size: 0.8rem;
+  }
+
+  .footer-social a {
+    font-size: 1.5rem;
+  }
+
+  .footer {
+    padding: 1rem;
   }
 }
