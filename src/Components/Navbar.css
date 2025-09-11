@@ -86,29 +86,8 @@
 /* Mobile styles */
 @media (max-width: 768px) {
   .navbar{
-    width:max-content;
-    justify-content: space-between;
-  }
-  .hamburger {
-    display: block;
+    width:100%;
+
   }
 
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background: rgba(34, 34, 34, 0.9);
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    padding: 15px;
-    border-radius: 10px;
-  }
-
-  .nav-links.open {
-    display: flex;
-  }
-
-  .nav-links li {
-    margin: 10px 0;
-  }
 }
