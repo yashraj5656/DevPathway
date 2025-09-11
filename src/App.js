@@ -98,14 +98,15 @@ const games = [
   {
     title: "Quiz Games",
     items: [
-      { name: "Python Quiz", image: "PY.png" },
-      { name: "Bash Quiz", image: "BA.png" },
-      { name: "TypeScript Quiz", image: "TSP.png" },
-      { name: "Docker Quiz", image: "DK.png" },
-      { name: "JavaScript Quiz", image: "JSP.png" },
+      { url: "https://yourdomain.com/python-quiz", image: "PY.png" },
+      { url: "https://yourdomain.com/bash-quiz", image: "BA.png" },
+      { url: "https://yourdomain.com/typescript-quiz", image: "TSP.png" },
+      { url: "https://yourdomain.com/docker-quiz", image: "DK.png" },
+      { url: "https://zyqentrajs.netlify.app", image: "JSP.png" },
     ],
   },
 ];
+
 //const ebook =[
 //  {
 //    title: "eBooks",
@@ -226,6 +227,7 @@ const sections = [
 function Home() {
   return (
     <div className="app">
+        <HeroSection />
       
      {/* <header className="header">
        <h1>Zyqentra</h1>
@@ -234,29 +236,31 @@ function Home() {
 
       {/*<div id="games" className="gam">Quiz Lab</div>*/}
       <div className="games">
-        {games.map((section, index) => (
-          <div key={index} className="section">
-            <h2>{section.title}</h2>
-            <div className="cad-grid">
-              {section.items.map((item, idx) => (
-                <Link
-                  key={idx}
-                  to={`/${slugify(item.name)}`}
-                  className="cad"
-                >
-                  <img
-                    src={item.image}
-                    alt={item.name}
-                    className="cad-image"
-                  />
-                  <span>{item.name}</span>
-                </Link>
-              ))}
-            </div>
-            <br />
-          </div>
+  {games.map((section, index) => (
+    <div key={index} className="section">
+      <h2>{section.title}</h2>
+      <div className="cad-grid">
+        {section.items.map((item, idx) => (
+          <a
+            key={idx}
+            href={item.url}       // use URL now
+            target="_blank"
+            rel="noreferrer"
+            className="cad"
+          >
+            <img
+              src={item.image}
+              alt="game"          // optional: generic alt if name removed
+              className="cad-image"
+            />
+          </a>
         ))}
       </div>
+      <br />
+    </div>
+  ))}
+</div>
+
 
       <div id="roadmap" className="roadmap">Skill Track</div>
       <div className="sections">
@@ -320,7 +324,7 @@ export default function App() {
     <Router>
       <ScrollToTop />
       <Navbar />  
-      <HeroSection />
+    
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/frontend" element={<Frontend />} />

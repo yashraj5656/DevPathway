@@ -72,15 +72,16 @@ export default function HeroSection() {
           Welcome to <span>Zyqentra</span>
         </h1>
         <p>
-          Discover learning roadmaps, projects, and resources to accelerate your
-          developer journey. Stay ahead with interactive guides and community
-          support.
-        </p>
+  Empower your developer journey with structured roadmaps, real-world projects, 
+  and <strong>interactive learning apps</strong> that make coding fun, practical, and engaging.  
+  Whether you’re just starting out or sharpening advanced skills, Zyqentra guides you 
+  step by step to mastery.
+</p>
 
 
 
         <div className="hero-buttons">
-          <Link to="/roadmaps" className="btn-primary">
+          <Link to="/" className="btn-primary">
             🚀 Start Learning
           </Link>
           <Link to="/community" className="btn-secondary">
