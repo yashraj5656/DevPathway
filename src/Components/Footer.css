@@ -1,4 +1,3 @@
-/* Base Footer Styles */
 .footer {
   background-color: #000;
   color: #00cba9;
@@ -7,7 +6,7 @@
   width: 100%;
   font-family: 'Orbitron', sans-serif;
   box-shadow: 0 -2px 20px rgba(0, 203, 169, 0.15);
-  margin-right: 0; /* remove margin to fit mobile */
+  margin-right: 2rem;
 }
 
 .footer-content {
@@ -15,6 +14,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 2rem;
+  margin-right: 2rem;
 }
 
 .footer-brand h2 {
@@ -34,6 +34,7 @@
 .footer-features {
   list-style: none;
   padding-left: 0;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .footer-features li {
@@ -79,8 +80,9 @@
 .footer-social .social-icons {
   display: flex;
   gap: 1rem;
-  justify-content: flex-start;
-  flex-direction: column; /* row layout for desktop */
+  margin-right: 1.7rem;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .footer-social a {
@@ -114,51 +116,99 @@
   text-shadow: 0 0 10px #00cba9, 0 0 20px rgba(0, 203, 169, 0.7);
 }
 
-/* 📱 Mobile Responsiveness */
+/* 📱 Mobile responsiveness */
 @media (max-width: 768px) {
+  .footer {
+    padding: 1.5rem;
+    margin-right: 0; /* Remove margin-right to avoid horizontal scroll */
+  }
+
   .footer-content {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 1.5rem;
+    margin-right: 0; /* Remove margin-right to fit mobile screens */
   }
 
   .footer-brand h2 {
-    font-size: 1.6rem;
+    font-size: 1.8rem; /* Slightly smaller heading for tablets */
   }
 
-  .footer-brand p,
-  .footer-links a,
+  .footer-brand p {
+    font-size: 0.9rem; /* Slightly smaller for better fit */
+  }
+
   .footer-features li {
-    font-size: 0.85rem;
+    font-size: 0.85rem; /* Adjust font size for readability */
+  }
+
+  .footer-links h4,
+  .footer-social h4 {
+    font-size: 1.1rem; /* Slightly smaller headings */
+  }
+
+  .footer-links a {
+    font-size: 0.85rem; /* Adjust link font size */
   }
 
   .footer-social .social-icons {
-    justify-content: center;
-    flex-direction: row; /* keep icons in row for better fit */
-    gap: 1rem;
-  }
-
-  .footer {
-    padding: 1.5rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .footer-brand h2 {
-    font-size: 1.4rem;
-  }
-
-  .footer-brand p,
-  .footer-links a,
-  .footer-features li {
-    font-size: 0.8rem;
+    flex-direction: row; /* Horizontal icons for better mobile display */
+    gap: 0.8rem;
+    margin-right: 0; /* Remove margin-right for centering */
   }
 
   .footer-social a {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Smaller icons for mobile */
   }
 
+  .footer-bottom {
+    font-size: 0.8rem; /* Slightly smaller for mobile */
+    padding-top: 0.8rem;
+  }
+}
+
+/* 📱 Extra small screens (e.g., phones below 480px) */
+@media (max-width: 480px) {
   .footer {
-    padding: 1rem;
+    padding: 1rem; /* Further reduce padding for smaller screens */
+  }
+
+  .footer-content {
+    gap: 1rem; /* Reduce gap for compact layout */
+  }
+
+  .footer-brand h2 {
+    font-size: 1.5rem; /* Smaller heading for small screens */
+  }
+
+  .footer-brand p {
+    font-size: 0.85rem; /* Further reduce for small screens */
+  }
+
+  .footer-features li {
+    font-size: 0.8rem; /* Smaller for better fit */
+  }
+
+  .footer-links h4,
+  .footer-social h4 {
+    font-size: 1rem; /* Smaller headings */
+  }
+
+  .footer-links a {
+    font-size: 0.8rem; /* Smaller links */
+  }
+
+  .footer-social a {
+    font-size: 1.3rem; /* Smaller icons for very small screens */
+  }
+
+  .footer-bottom {
+    font-size: 0.75rem; /* Smallest font for footer text */
+    margin-top: 1.5rem; /* Adjust margin */
+  }
+
+  .footer-bottom a {
+    margin: 0 0.3rem; /* Reduce margin between links */
   }
 }
