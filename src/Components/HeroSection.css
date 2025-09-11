@@ -1,3 +1,4 @@
+
 .hero {
   position: relative;
   display: flex;
@@ -9,6 +10,7 @@
   color: #eee;
   overflow: hidden;
   padding: 2rem;
+  box-sizing: border-box; /* Prevent padding overflow */
 }
 
 #stars {
@@ -67,7 +69,6 @@
   }
 }
 
-
 .hero p {
   font-size: 1.3rem;
   text-align: center;
@@ -80,8 +81,6 @@
   -webkit-text-fill-color: transparent;
   opacity: 0.9;
 }
-
-
 
 .hero-buttons {
   display: flex;
@@ -135,13 +134,13 @@
   }
 }
 
-
 .scroll-down {
   position: absolute;
   bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
   cursor: pointer;
+  margin-bottom: -8rem;
 }
 
 .scroll-down span {
@@ -169,55 +168,162 @@
     opacity: 1;
   }
 }
-/* Mobile-friendly Hero Section */
+
+/* 📱 Mobile responsiveness for tablets and larger phones */
 @media (max-width: 768px) {
   .hero {
-    min-height: 70vh;
+    min-height: 60vh; /* Reduced height for mobile */
     padding: 1.5rem;
   }
 
   .hero-content {
-    margin-top: 0; /* remove negative margin for mobile */
     max-width: 100%;
     padding: 0 1rem;
   }
 
   .hero h1 {
-    font-size: 2rem;
+    font-size: 2.2rem; /* Smaller heading */
     line-height: 1.2;
     letter-spacing: 0.5px;
   }
 
   .hero h1 span {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .hero p {
     font-size: 1rem;
-    max-width: 95%;
+    max-width: 90%; /* Prevent text overflow */
     line-height: 1.4;
+    display: none;
   }
 
   .hero-buttons {
-    flex-direction: column;
+    flex-direction: column; /* Stack buttons vertically */
     gap: 1rem;
+    margin-top: 1.5rem;
+    display: none;
   }
 
   .btn-primary,
   .btn-secondary {
     font-size: 1rem;
     padding: 0.7rem 1.2rem;
+    width: 100%; /* Full-width buttons for touch */
+    max-width: 250px; /* Limit button width */
+    margin: 0 auto; /* Center buttons */
   }
 
   .scroll-down {
-    bottom: 20px;
+    bottom: 20px; /* Closer to bottom */
   }
 
   .scroll-down span {
     width: 20px;
     height: 20px;
-    margin: 0;
     border-bottom: 2px solid #00cba9;
     border-right: 2px solid #00cba9;
+    margin: 0; /* Remove large margin */
+  }
+}
+
+/* 📱 Smaller phones */
+@media (max-width: 480px) {
+  .hero {
+    min-height: 50vh; /* Further reduce height */
+    padding: 1rem;
+  }
+
+  .hero-content {
+    padding: 0 0.8rem;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem; /* Smaller heading */
+    line-height: 1.1;
+  }
+
+  .hero h1 span {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+    max-width: 95%;
+  }
+
+  .hero-buttons {
+    gap: 0.8rem;
+    margin-top: 1rem;
+    display: none;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+    max-width: 200px;
+  }
+
+  .scroll-down {
+    bottom: 15px;
+  }
+
+  .scroll-down span {
+    width: 18px;
+    height: 18px;
+    border-bottom: 1.5px solid #00cba9;
+    border-right: 1.5px solid #00cba9;
+  }
+}
+
+/* 📱 Very small screens (e.g., older phones) */
+@media (max-width: 360px) {
+  .hero {
+    min-height: 45vh;
+    padding: 0.8rem;
+  }
+
+  .hero-content {
+    padding: 0 0.5rem;
+  }
+
+  .hero h1 {
+    font-size: 0.7rem;
+    line-height: 1;
+  }
+
+  .hero h1 span {
+    font-size: 0.7rem;
+  }
+
+  .hero p {
+    font-size: 2px;         /* This is extremely small—maybe you meant 12px or 16px? */
+    max-width: 100%;        /* This is fine */
+    display: none;          /* 'hidd' is not a valid value; use 'none' to hide the element */
+  }
+  
+
+  .hero-buttons {
+    gap: 0.7rem;
+    margin-top: 0.8rem;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    font-size: 0.85rem;
+    padding: 0.5rem 0.8rem;
+    max-width: 180px;
+  }
+
+  .scroll-down {
+    bottom: 10px;
+  }
+
+  .scroll-down span {
+    width: 16px;
+    height: 16px;
+    border-bottom: 1.5px solid #00cba9;
+    border-right: 1.5px solid #00cba9;
   }
 }
