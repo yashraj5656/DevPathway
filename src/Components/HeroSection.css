@@ -20,12 +20,15 @@
   z-index: 0;
 }
 
+/* Hero Content Fix */
 .hero-content {
-  margin-top: -12rem;
+  margin-top: 0; /* reset negative margin */
   position: relative;
   z-index: 1;
   max-width: 970px;
-  animation: fadeIn 1.5s ease-in-out;
+  width: 100%; /* scale to mobile */
+  padding: 0 1rem; /* add horizontal padding */
+  box-sizing: border-box;
 }
 
 .hero h1 {
@@ -174,8 +177,9 @@
   }
 
   .hero-content {
-    margin-top: -6rem;
-    max-width: 90%;
+    margin-top: 0; /* remove negative margin for mobile */
+    max-width: 100%;
+    padding: 0 1rem;
   }
 
   .hero h1 {

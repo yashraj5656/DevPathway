@@ -1,31 +1,36 @@
-/* App.css - Dark Theme Integrated */
+/* App.css - Dark Theme Fully Mobile-Friendly */
 
 /* Global Styles */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
-html, body{
-  width:100%;
-  overflow-x: hidden;
+
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* prevent horizontal scroll */
+  margin: 0;
+  padding: 0;
 }
+
 body {
   font-family: 'Orbitron', sans-serif;
-  /*background: radial-gradient(circle at top, #0f2027, #1c1c1c, #282c34);*/
   background: #000;
   color: #eee;
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  padding: 2rem 0;
+  box-sizing: border-box;
 }
 
 /* App Container */
 .app {
   padding: 2rem;
   max-width: 1300px;
-  width: 1300px;
-  margin: 6rem auto;
-  background-color:#000;
+  width: 100%; /* full width on mobile */
+  margin: 2rem auto;
+  background-color: #000;
   border-radius: 12px;
- /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);*/
+  box-sizing: border-box;
 }
 
 /* Header Styles */
@@ -62,9 +67,12 @@ body {
   -webkit-overflow-scrolling: touch;
   padding: 15px;
   border-radius: 10px;
-  background:#000;
+  background: rgba(0, 203, 169, 0.1);
   margin-bottom: 20px;
+  box-sizing: border-box;
 }
+
+/* Section Header */
 .section h2 {
   font-size: 1.8rem;
   margin-bottom: 1.2rem;
@@ -75,7 +83,7 @@ body {
 /* Grid Layout for Cards */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 1rem;
 }
 
@@ -89,63 +97,46 @@ body {
   cursor: pointer;
   text-decoration: none;
   font-weight: 500;
-  /*background: radial-gradient(circle at top, #0f2027, #1c1c1c, #282c34);*/
   color: #00cba9;
   background-color: #000;
 }
 
-/* Hover Effects */
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 0 20px rgba(0, 203, 169, 0.7);
 }
 
-/* Optional Logo Animation (if used) */
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
+/* Cad Grid */
 .cad-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 15px;
 }
 
-.cad {
+/* Cad Items */
+.cad, .cadd {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-decoration: none;
   padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 203, 169, 0.2);
   transition: transform 0.3s, box-shadow 0.3s;
-  /*background: radial-gradient(circle at top, #0f2027, #1c1c1c, #282c34);*/
-  background-color:  #000;
+  background-color: #000;
   color: #00cba9;
 }
 
-.cad:hover {
+.cad:hover, .cadd:hover {
   transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 203, 169, 0.7);
 }
 
+/* Cad Images */
 .cad-image {
   width: 100%;
-  height: 150px;
+  height: auto;
+  max-height: 200px;
   object-fit: cover;
   clip-path: polygon(
     30px 0%,
@@ -157,20 +148,15 @@ body {
   );
 }
 
-.cad span {
-  margin-top: 10px;
-  font-size: 16px;
-  text-align: center;
-  color: #00cba9;
-}
-.cadd span {
+.cad span, .cadd span {
   margin-top: 10px;
   font-size: 16px;
   text-align: center;
   color: #00cba9;
 }
 
-.games {
+/* Games, Ebooks, Roadmap Boxes */
+.games, .ebook, .sections {
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   padding: 15px;
@@ -178,51 +164,9 @@ body {
   background: #000;
   margin-bottom: 20px;
   max-height: 300px;
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
 }
 
-.ebook {
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-  padding: 15px;
-  border-radius: 10px;
-  /*background: rgba(0, 203, 169, 0.1);*/
-  background-color: #000;
-  margin-bottom: 20px;
-  max-height: 300px;
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-
-.cadd {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 203, 169, 0.2);
-  transition: transform 0.3s, box-shadow 0.3s;
-  background: #000;
-  color: #00cba9;
-}
-
-.cadd:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 20px rgba(0, 203, 169, 0.7);
-}
-
-.roadmap {
-  padding: 15px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  text-align: left;
-  font-size: 2rem;
-  color: #00cba9;
-  background-color: #000;
-}
-.ebooks{
+.roadmap, .ebooks, .gam {
   padding: 15px;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -232,112 +176,23 @@ body {
   background-color: #000;
 }
 
-.sections {
-  max-height: 500px;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-  padding: 15px;
-  border-radius: 10px;
-  background: rgba(0, 203, 169, 0.1);
-  margin-bottom: 20px;
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-
-.games::-webkit-scrollbar,
+/* Hide Scrollbars */
 .sections::-webkit-scrollbar,
+.games::-webkit-scrollbar,
 .ebook::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Edge */
+  display: none;
+}
+.sections, .games, .ebook {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-.gam {
-  padding: 15px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  text-align: left;
-  font-size: 2rem;
-  color: #00cba9;
-  background-color: #000;
-}
-
-/* Mobile Improvements - Dark Theme App */
-
-/* Global Tweaks for Mobile */
-@media (max-width: 480px) {
-  .app {
-    padding: 0.8rem;
-    margin: 1rem auto;
-    width: 95%;
-  }
-
-  .header {
-    padding: 10px;
-    border-radius: 30px;
-  }
-
-  .header h1 {
-    font-size: 2rem;
-  }
-
-  .header p {
-    font-size: 1rem;
-    max-width: 90%;
-  }
-
-  .section h2 {
-    font-size: 1.3rem;
-  }
-
-  /* Card Grid Adjustments */
-  .card-grid {
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 0.6rem;
-  }
-
-  .card {
-    padding: 0.6rem;
-    font-size: 0.85rem;
-  }
-
-  /* Cad/Grid Cards */
-  .cad-grid {
-    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-    gap: 10px;
-  }
-
-  .cad, .cadd {
-    padding: 8px;
-  }
-
-  .cad-image {
-    height: 180px;
-  }
-
-  .cad span, .cadd span {
-    font-size: 12px;
-  }
-
-  /* Sections, Games, Ebook Boxes */
-  .roadmap, .ebooks, .gam, .sections, .games, .ebook {
-    font-size: 1.2rem;
-    padding: 8px;
-    max-height: 300px;
-  }
-
-  /* Optional scrollbar tweaks */
-  .sections::-webkit-scrollbar,
-  .games::-webkit-scrollbar,
-  .ebook::-webkit-scrollbar {
-    display: none;
-  }
-}
-
-/* Optional Tablet Enhancements (480px - 768px) */
+/* Responsive Mobile Styles */
 @media (max-width: 768px) {
   .app {
     padding: 1rem;
     margin: 3rem auto;
-    width: 100%;
+    width: 95%;
   }
 
   .header h1 {
@@ -346,6 +201,7 @@ body {
 
   .header p {
     font-size: 1.2rem;
+    max-width: 90%;
   }
 
   .section h2 {
@@ -353,39 +209,80 @@ body {
   }
 
   .card-grid {
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 0.8rem;
-    width: 100%;
   }
 
   .card {
     padding: 0.8rem;
     font-size: 0.9rem;
-    width: 100%;
   }
 
   .cad-grid {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 15px;
-    width:100%;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 10px;
   }
 
   .cad-image {
-    height: 210px;
+    max-height: 180px;
   }
 
   .cad span, .cadd span {
     font-size: 14px;
   }
 
-  .roadmap, .ebooks, .gam {
+  .roadmap, .ebooks, .gam, .sections, .games, .ebook {
     font-size: 1.5rem;
     padding: 10px;
-    width:100;
+    max-height: 330px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app {
+    padding: 0.8rem;
+    margin: 1rem auto;
+    width: 95%;
   }
 
-  .sections, .games, .ebook {
-    max-height: 350px;
-    width:100%;
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+
+  .section h2 {
+    font-size: 1.3rem;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 0.6rem;
+  }
+
+  .card {
+    padding: 0.6rem;
+    font-size: 0.85rem;
+  }
+
+  .cad-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 8px;
+  }
+
+  .cad-image {
+    max-height: 150px;
+  }
+
+  .cad span, .cadd span {
+    font-size: 12px;
+  }
+
+  .roadmap, .ebooks, .gam, .sections, .games, .ebook {
+    font-size: 1.2rem;
+    padding: 8px;
+    max-height: 300px;
   }
 }
