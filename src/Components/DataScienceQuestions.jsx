@@ -56,7 +56,7 @@ export default function DataScienceQuestions() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">Data Science Interview Questions</h1>
       <p className="frontend-description">
         Must-know data science interview questions covering machine learning, data preparation, and real-world applications.

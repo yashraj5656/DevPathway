@@ -56,7 +56,7 @@ export default function DataAnalystQuestions() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">Data Analyst Interview Questions</h1>
       <p className="frontend-description">
         Essential questions covering SQL, statistics, data interpretation, and practical data analysis scenarios.

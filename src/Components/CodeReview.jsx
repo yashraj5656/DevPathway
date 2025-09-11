@@ -56,7 +56,7 @@ export default function CodeReview() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">Code Review</h1>
       <p className="frontend-description">
         Follow these best practices to conduct effective, respectful, and valuable code reviews.

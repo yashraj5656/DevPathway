@@ -52,7 +52,7 @@ export default function Redis() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">Redis Roadmap</h1>
       <p className="frontend-description">
         Learn Redis fundamentals and advanced features to build high-performance distributed applications.

@@ -92,7 +92,7 @@ export default function GoRoadmap() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">Golang Developer Roadmap</h1>
       <p className="frontend-description">
         Follow these steps to master Go for building scalable, concurrent web services, CLI tools, and microservices.

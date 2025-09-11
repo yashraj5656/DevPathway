@@ -56,7 +56,7 @@ export default function JavaScriptQuestions() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">JavaScript Interview Questions</h1>
       <p className="frontend-description">
         Here are some commonly asked JavaScript interview questions categorized by difficulty.

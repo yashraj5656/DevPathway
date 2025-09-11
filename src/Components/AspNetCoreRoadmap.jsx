@@ -93,7 +93,7 @@ export default function AspNetCoreRoadmap() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">ASP.NET Core Developer Roadmap</h1>
       <p className="frontend-description">
         Follow these steps to master ASP.NET Core and build scalable, secure, and maintainable web applications.

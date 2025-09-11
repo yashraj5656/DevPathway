@@ -56,7 +56,7 @@ export default function SQLQueriesQuestions() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">SQL Queries Interview Questions</h1>
       <p className="frontend-description">
         Practice SQL queries covering selection, filtering, joins, aggregation, and optimization.

@@ -96,7 +96,7 @@ export default function NodejsRoadmap() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">Node.js Developer Roadmap</h1>
       <p className="frontend-description">
         Follow these steps to become a proficient Node.js backend developer and build scalable server-side applications.

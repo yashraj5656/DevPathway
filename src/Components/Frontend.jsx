@@ -84,7 +84,7 @@ export default function Frontend() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">Frontend Development Roadmap</h1>
       <p className="frontend-description">
         Follow these steps in order to become a skilled Frontend Developer.

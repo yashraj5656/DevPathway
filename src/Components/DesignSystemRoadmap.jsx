@@ -86,7 +86,7 @@ export default function DesignSystemRoadmap() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">Design System Roadmap</h1>
       <p className="frontend-description">
         Follow these steps to create scalable, consistent, and reusable design systems for your products and teams.

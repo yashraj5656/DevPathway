@@ -97,7 +97,7 @@ export default function UXDesign() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">UX Design Roadmap</h1>
       <p className="frontend-description">
         Follow these steps to become a UX Designer and create intuitive, user-centered digital experiences.

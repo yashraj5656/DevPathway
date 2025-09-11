@@ -94,7 +94,7 @@ export default function ComputerScience() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">Computer Science Roadmap</h1>
       <p className="frontend-description">
         Follow these steps to build a strong foundation in Computer Science and become a versatile software engineer.

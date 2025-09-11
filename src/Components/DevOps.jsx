@@ -87,7 +87,7 @@ export default function DevOps() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">DevOps Roadmap</h1>
       <p className="frontend-description">
         Follow these steps to build a strong DevOps skill set and automate your software development lifecycle.

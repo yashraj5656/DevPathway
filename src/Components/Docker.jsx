@@ -52,7 +52,7 @@ export default function Docker() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">Docker Roadmap</h1>
       <p className="frontend-description">
         Learn Docker step-by-step to containerize your applications and deploy them efficiently.

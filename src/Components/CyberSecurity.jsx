@@ -96,7 +96,7 @@ export default function CyberSecurity() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">Cyber Security Roadmap</h1>
       <p className="frontend-description">
         Follow these steps to build a career in cyber security, covering core concepts, hands-on skills, and advanced protection techniques.

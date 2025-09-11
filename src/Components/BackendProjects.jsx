@@ -57,7 +57,7 @@ export default function BackendProjects() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">Backend Project Ideas</h1>
       <p className="frontend-description">
         Work on these project ideas to build scalable, secure, and maintainable backend services.

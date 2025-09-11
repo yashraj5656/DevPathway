@@ -51,7 +51,7 @@ export default function AWS() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">AWS Roadmap</h1>
       <p className="frontend-description">
         Step-by-step roadmap to learn and master AWS Cloud services for building scalable applications.

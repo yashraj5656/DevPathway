@@ -88,7 +88,7 @@ export default function FullStack() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">Full Stack Development Roadmap</h1>
       <p className="frontend-description">
         This roadmap guides you through mastering both frontend and backend development as a Full Stack Developer.

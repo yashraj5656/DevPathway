@@ -56,7 +56,7 @@ export default function DevOpsQuestions() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">DevOps Interview Questions</h1>
       <p className="frontend-description">
         Key DevOps interview questions covering CI/CD, automation, containerization, security, and monitoring.

@@ -56,7 +56,7 @@ export default function ReactQuestions() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">React Interview Questions</h1>
       <p className="frontend-description">
         Essential React interview questions covering fundamentals, hooks, performance, and practical coding.

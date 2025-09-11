@@ -95,7 +95,7 @@ export default function PythonRoadmap() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">Python Developer Roadmap</h1>
       <p className="frontend-description">
         Follow these steps to master Python and build applications in web development, automation, and data science.

@@ -55,7 +55,7 @@ export default function Linux() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">Linux Roadmap</h1>
       <p className="frontend-description">
         Follow this roadmap to master Linux system administration and shell scripting fundamentals.

@@ -52,7 +52,7 @@ export default function GitGitHub() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">Git & GitHub Roadmap</h1>
       <p className="frontend-description">
         Follow this roadmap to master Git for version control and GitHub for collaborative development.

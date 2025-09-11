@@ -53,7 +53,7 @@ export default function Kubernetes() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">Kubernetes Roadmap</h1>
       <p className="frontend-description">
         Follow this roadmap to master Kubernetes for deploying, scaling, and managing containerized applications.

@@ -75,7 +75,7 @@ export default function BackendPerformance() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">Backend Performance Best Practices</h1>
       <p className="frontend-description">
         Follow these practices to optimize your backend services for speed, scalability, and efficiency.

@@ -69,7 +69,7 @@ export default function AWSBestPractices() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">AWS Best Practices</h1>
       <p className="frontend-description">
         Follow these best practices to secure, optimize, and efficiently manage your AWS infrastructure.

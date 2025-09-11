@@ -18,7 +18,7 @@ export default function Navbar() {
         <Link to="/">Zyqentra</Link>
       </div>
 
-      <ul className={`nav-links ${isOpen ? "open" : ""}`}>
+      {/*<ul className={`nav-links ${isOpen ? "open" : ""}`}>
         <li>
           <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
         </li>
@@ -31,7 +31,7 @@ export default function Navbar() {
         <li>
           <Link to="/" onClick={() => setIsOpen(false)}>eBooks</Link>
         </li>
-      </ul>
+      </ul>*/}
     </nav>
   );
 }

@@ -96,7 +96,7 @@ export default function Blockchain() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">Blockchain Development Roadmap</h1>
       <p className="frontend-description">
         Follow these steps to become a Blockchain Developer and build decentralized applications on modern blockchain platforms.

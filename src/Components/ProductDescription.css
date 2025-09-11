@@ -1,8 +1,9 @@
-.frontend-container {
-  max-width: 900px;
+.OG {
+  max-width: 1100px;
+  width: 1100px;
   margin: 6rem auto;
   padding: 2rem;
-  background-color: #1c1c1c;
+  background: #000;
   border-radius: 12px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
   color: #eee;
@@ -33,7 +34,7 @@
 }
 
 .frontend-list li {
-  background: #282c34;
+  background: rgba(0, 203, 169, 0.1);;
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 203, 169, 0.2);
@@ -69,7 +70,7 @@
 
 /* Media Queries for Mobile Friendliness */
 @media (max-width: 768px) {
-  .frontend-container {
+  .OG {
     max-width: 100%;
     margin: 5rem auto;
     padding: 1rem;

@@ -55,7 +55,7 @@ export default function DataStructures() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">Data Structures & Algorithms Roadmap</h1>
       <p className="frontend-description">
         A step-by-step roadmap to master Data Structures & Algorithms for technical interviews and real-world problem-solving.

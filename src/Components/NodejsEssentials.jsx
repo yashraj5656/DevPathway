@@ -3,7 +3,7 @@ import './ProductDescription.css'; // Reuse the same CSS file for consistency
 
 const NodejsEssentials = () => {
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">📖 Node.js Essentials</h1>
 
       {/* Product Description */}

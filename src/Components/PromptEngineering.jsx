@@ -52,7 +52,7 @@ export default function PromptEngineering() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">Prompt Engineering Roadmap</h1>
       <p className="frontend-description">
         Learn how to craft effective prompts to maximize the performance of AI language models in your applications.

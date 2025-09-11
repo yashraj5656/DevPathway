@@ -52,7 +52,7 @@ export default function Cloudflare() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">Cloudflare Roadmap</h1>
       <p className="frontend-description">
         Learn how to use Cloudflare for CDN, DNS, security, and serverless edge computing to improve your application’s performance and reliability.

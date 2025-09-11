@@ -96,7 +96,7 @@ export default function TechnicalWriter() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">Technical Writer Roadmap</h1>
       <p className="frontend-description">
         Follow these steps to become a Technical Writer and create clear, helpful, and structured documentation for technical products.

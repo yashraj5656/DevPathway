@@ -95,7 +95,7 @@ export default function VueRoadmap() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">Vue.js Developer Roadmap</h1>
       <p className="frontend-description">
         Follow these steps to master Vue.js and build interactive, modern web applications.

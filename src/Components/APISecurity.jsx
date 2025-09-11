@@ -1,3 +1,4 @@
+
 import React from "react";
 import "./Frontend.css";
 
@@ -73,7 +74,7 @@ export default function APISecurity() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">API Security Best Practices</h1>
       <p className="frontend-description">
         Follow these practices to secure your APIs against unauthorized access, data breaches, and common vulnerabilities.

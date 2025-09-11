@@ -87,7 +87,7 @@ export default function DataAnalyst() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">Data Analyst Roadmap</h1>
       <p className="frontend-description">
         Follow these steps to become a skilled Data Analyst who can extract insights and drive business decisions.

@@ -91,7 +91,7 @@ export default function Android() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">Android Development Roadmap</h1>
       <p className="frontend-description">
         Follow these steps to become a professional Android developer using modern tools and best practices.

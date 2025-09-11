@@ -53,7 +53,7 @@ export default function MongoDB() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">MongoDB Roadmap</h1>
       <p className="frontend-description">
         A step-by-step roadmap to learn MongoDB from basics to advanced topics for real-world applications.

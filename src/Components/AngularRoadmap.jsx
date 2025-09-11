@@ -94,7 +94,7 @@ export default function AngularRoadmap() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">Angular Developer Roadmap</h1>
       <p className="frontend-description">
         Follow these steps to master Angular and build scalable front-end applications using TypeScript.

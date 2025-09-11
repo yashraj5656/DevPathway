@@ -90,7 +90,7 @@ export default function CppRoadmap() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="OG">
       <h1 className="frontend-title">C++ Developer Roadmap</h1>
       <p className="frontend-description">
         Follow these steps to master C++ for systems programming, competitive programming, and application development.

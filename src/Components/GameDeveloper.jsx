@@ -96,7 +96,7 @@ export default function GameDeveloper() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">Game Developer Roadmap</h1>
       <p className="frontend-description">
         Follow these steps to become a Game Developer and build engaging 2D, 3D, and multiplayer games.

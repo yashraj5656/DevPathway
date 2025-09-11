@@ -56,7 +56,7 @@ export default function FrontendQuestions() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">Frontend Interview Questions</h1>
       <p className="frontend-description">
         Common frontend interview questions covering HTML, CSS, JavaScript, React, and performance optimization.

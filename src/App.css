@@ -8,7 +8,8 @@ html, body{
 }
 body {
   font-family: 'Orbitron', sans-serif;
-  background: radial-gradient(circle at top, #0f2027, #1c1c1c, #282c34);
+  /*background: radial-gradient(circle at top, #0f2027, #1c1c1c, #282c34);*/
+  background: #000;
   color: #eee;
   min-height: 100vh;
   display: flex;
@@ -19,12 +20,12 @@ body {
 /* App Container */
 .app {
   padding: 2rem;
-  max-width: 900px;
-  width: 900px;
+  max-width: 1300px;
+  width: 1300px;
   margin: 6rem auto;
-  background-color: #1c1c1c;
+  background-color:#000;
   border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+ /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);*/
 }
 
 /* Header Styles */
@@ -61,7 +62,7 @@ body {
   -webkit-overflow-scrolling: touch;
   padding: 15px;
   border-radius: 10px;
-  background: rgba(0, 203, 169, 0.1);
+  background:#000;
   margin-bottom: 20px;
 }
 .section h2 {
@@ -88,8 +89,9 @@ body {
   cursor: pointer;
   text-decoration: none;
   font-weight: 500;
-  background: radial-gradient(circle at top, #0f2027, #1c1c1c, #282c34);
+  /*background: radial-gradient(circle at top, #0f2027, #1c1c1c, #282c34);*/
   color: #00cba9;
+  background-color: #000;
 }
 
 /* Hover Effects */
@@ -134,7 +136,8 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 203, 169, 0.2);
   transition: transform 0.3s, box-shadow 0.3s;
-  background: radial-gradient(circle at top, #0f2027, #1c1c1c, #282c34);
+  /*background: radial-gradient(circle at top, #0f2027, #1c1c1c, #282c34);*/
+  background-color:  #000;
   color: #00cba9;
 }
 
@@ -168,7 +171,7 @@ body {
   -webkit-overflow-scrolling: touch;
   padding: 15px;
   border-radius: 10px;
-  background: rgba(0, 203, 169, 0.1);
+  background: #000;
   margin-bottom: 20px;
   max-height: 300px;
   -ms-overflow-style: none; /* IE and Edge */
@@ -180,7 +183,8 @@ body {
   -webkit-overflow-scrolling: touch;
   padding: 15px;
   border-radius: 10px;
-  background: rgba(0, 203, 169, 0.1);
+  /*background: rgba(0, 203, 169, 0.1);*/
+  background-color: #000;
   margin-bottom: 20px;
   max-height: 300px;
   -ms-overflow-style: none; /* IE and Edge */
@@ -196,7 +200,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 203, 169, 0.2);
   transition: transform 0.3s, box-shadow 0.3s;
-  background: radial-gradient(circle at top, #0f2027, #1c1c1c, #282c34);
+  background: #000;
   color: #00cba9;
 }
 
@@ -212,7 +216,7 @@ body {
   text-align: left;
   font-size: 2rem;
   color: #00cba9;
-  background-color: #1c1c1c;
+  background-color: #000;
 }
 .ebooks{
   padding: 15px;
@@ -221,7 +225,7 @@ body {
   text-align: left;
   font-size: 2rem;
   color: #00cba9;
-  background-color: #1c1c1c;
+  background-color: #000;
 }
 
 .sections {
@@ -249,7 +253,7 @@ body {
   text-align: left;
   font-size: 2rem;
   color: #00cba9;
-  background-color: #1c1c1c;
+  background-color: #000;
 }
 
 /* Media Queries for Mobile Friendliness */

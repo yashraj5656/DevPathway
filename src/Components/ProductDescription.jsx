@@ -3,7 +3,7 @@ import './ProductDescription.css'; // Import the CSS file
 
 const ProductDescription = () => {
   return (
-    <div className="frontend-container">
+    <div className="OG">
       <h1 className="frontend-title">📖 Mastering JavaScript</h1>
 
       {/* Product Description */}

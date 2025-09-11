@@ -92,7 +92,7 @@ export default function SystemDesignRoadmap() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">System Design Roadmap</h1>
       <p className="frontend-description">
         Follow these steps to master system design and architect scalable, reliable, and efficient distributed systems.

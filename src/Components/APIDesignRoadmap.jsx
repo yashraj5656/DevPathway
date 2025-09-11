@@ -95,7 +95,7 @@ export default function APIDesignRoadmap() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">API Design Roadmap</h1>
       <p className="frontend-description">
         Follow these steps to design, build, secure, and maintain scalable and maintainable APIs.

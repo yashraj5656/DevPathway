@@ -51,7 +51,7 @@ export default function ReactNative() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">React Native Roadmap</h1>
       <p className="frontend-description">
         Follow this roadmap to build cross-platform mobile apps using React Native efficiently.

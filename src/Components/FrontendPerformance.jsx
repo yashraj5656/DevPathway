@@ -69,7 +69,7 @@ export default function FrontendPerformance() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">Frontend Performance Best Practices</h1>
       <p className="frontend-description">
         Improve your website's load speed, responsiveness, and user experience by following these frontend optimization practices.

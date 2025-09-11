@@ -56,7 +56,7 @@ export default function NodeJSQuestions() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">Node.js Interview Questions</h1>
       <p className="frontend-description">
         Explore essential Node.js interview questions from beginner to advanced levels.

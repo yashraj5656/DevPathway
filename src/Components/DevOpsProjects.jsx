@@ -54,7 +54,7 @@ export default function DevOpsProjects() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">DevOps Project Ideas</h1>
       <p className="frontend-description">
         Explore these project ideas to practice automation, deployment, and infrastructure management.

@@ -95,7 +95,7 @@ export default function JavaScriptRoadmap() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">JavaScript Developer Roadmap</h1>
       <p className="frontend-description">
         Follow these steps to master JavaScript and build dynamic, interactive web applications.

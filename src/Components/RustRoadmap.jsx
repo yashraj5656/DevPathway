@@ -91,7 +91,7 @@ export default function RustRoadmap() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">Rust Developer Roadmap</h1>
       <p className="frontend-description">
         Follow these steps to master Rust for building safe, fast, and concurrent systems and web applications.

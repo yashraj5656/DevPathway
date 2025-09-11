@@ -48,7 +48,7 @@ export default function AIRedTeaming() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">AI Red Teaming Roadmap</h1>
       <p className="frontend-description">
         Explore how to ethically test and secure AI systems against adversarial threats through AI Red Teaming practices.

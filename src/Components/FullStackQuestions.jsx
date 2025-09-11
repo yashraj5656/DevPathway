@@ -56,7 +56,7 @@ export default function FullStackQuestions() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">Full-Stack Interview Questions</h1>
       <p className="frontend-description">
         Common full-stack interview questions covering frontend, backend, databases, and deployment.

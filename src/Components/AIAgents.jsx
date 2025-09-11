@@ -52,7 +52,7 @@ export default function AIAgents() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">AI Agents Roadmap</h1>
       <p className="frontend-description">
         Learn how to build autonomous AI agents capable of completing complex, multi-step tasks using reasoning and external tools.

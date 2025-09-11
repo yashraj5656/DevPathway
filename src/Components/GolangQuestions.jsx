@@ -56,7 +56,7 @@ export default function GolangQuestions() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">Golang Interview Questions</h1>
       <p className="frontend-description">
         Key Go interview questions covering concurrency, error handling, Go routines, interfaces, and practical use cases.

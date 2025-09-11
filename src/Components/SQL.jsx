@@ -93,7 +93,7 @@ export default function SQL() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">SQL Roadmap</h1>
       <p className="frontend-description">
         Follow these steps to master SQL and work effectively with relational databases.

@@ -91,7 +91,7 @@ export default function GraphQLRoadmap() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">GraphQL Developer Roadmap</h1>
       <p className="frontend-description">
         Follow these steps to master GraphQL for building flexible, real-time APIs and efficient frontend data fetching.

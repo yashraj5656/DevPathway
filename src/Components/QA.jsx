@@ -92,7 +92,7 @@ export default function QA() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">QA (Quality Assurance) Roadmap</h1>
       <p className="frontend-description">
         Follow these steps to become a skilled QA engineer, covering manual testing, automation, and DevOps testing practices.

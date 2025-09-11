@@ -93,7 +93,7 @@ export default function JavaRoadmap() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">Java Developer Roadmap</h1>
       <p className="frontend-description">
         Follow these steps to master Java for backend development, web applications, and enterprise systems.

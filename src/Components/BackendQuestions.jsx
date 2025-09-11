@@ -56,7 +56,7 @@ export default function BackendQuestions() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">Backend Interview Questions</h1>
       <p className="frontend-description">
         Key backend interview questions covering databases, APIs, security, and system design.

@@ -77,16 +77,22 @@ import PHP from "./Components/PHP";
 import Cloudflare from "./Components/Cloudflare";
 import AIAgents from "./Components/AIAgents";
 import AIRedTeaming from "./Components/AIRedTeaming";
-import ProductDescription from "./Components/ProductDescription"; 
-import PythonBasics from "./Components/PythonBasics";
-import ReactHandbook from "./Components/ReactHandbook";
-import NodejsEssentials from "./Components/NodejsEssentials";
-import SqlFundamentals from "./Components/SqlFundamentals";
+//import ProductDescription from "./Components/ProductDescription"; 
+//import PythonBasics from "./Components/PythonBasics";
+//import ReactHandbook from "./Components/ReactHandbook";
+//import NodejsEssentials from "./Components/NodejsEssentials";
+//import SqlFundamentals from "./Components/SqlFundamentals";
 import JavaScriptQuiz from "./Components/JavaScriptQuiz";
 import PythonQuiz from "./Components/PythonQuiz";
 import BashQuiz from "./Components/BashQuiz";
 import TypeScriptQuiz from "./Components/TypeScriptQuiz";
-import DockerQuiz from "./Components/DockerQuiz"
+import DockerQuiz from "./Components/DockerQuiz";
+import Footer from "./Components/Footer";
+import PrivacyPolicy from "./Components/PrivacyPolicy";
+import TermsOfService from "./Components/TermsOfService";
+import ContactUs from "./Components/ContactUs";
+import HeroSection from "./Components/HeroSection";
+
 
 const games = [
   {
@@ -100,18 +106,18 @@ const games = [
     ],
   },
 ];
-const ebook =[
-  {
-    title: "eBooks",
-    items: [
-      { name: "JavaScript Guide", image: "JS.png" },
-      { name: "Python Basics", image: "P.png" },
-      { name: "React Handbook", image: "R.png" },
-      { name: "Node.js Essentials", image: "NJS.png" },
-      { name: "SQL Fundamentals", image: "SQL.png" },
-    ],
-  },
-]
+//const ebook =[
+//  {
+//    title: "eBooks",
+//    items: [
+//      { name: "JavaScript Guide", image: "JS.png" },
+//      { name: "Python Basics", image: "P.png" },
+//      { name: "React Handbook", image: "R.png" },
+//      { name: "Node.js Essentials", image: "NJS.png" },
+//      { name: "SQL Fundamentals", image: "SQL.png" },
+//    ],
+//  },
+//]
 
 const sections = [
   {
@@ -226,7 +232,7 @@ function Home() {
         
       </header>*/} 
 
-      <div id="games" className="gam">Quiz Lab</div>
+      {/*<div id="games" className="gam">Quiz Lab</div>*/}
       <div className="games">
         {games.map((section, index) => (
           <div key={index} className="section">
@@ -274,7 +280,7 @@ function Home() {
         ))}
       </div>
 
-      <div id="ebooks" className="ebooks">Learn Shelf</div>
+      {/*<div id="ebooks" className="ebooks">Learn Shelf</div>
       <div className="ebook">
         {ebook.map((ebook, index) => (
           <div key={index} className="section">
@@ -298,7 +304,7 @@ function Home() {
             <br />
           </div>
         ))}
-      </div>
+      </div>*/}
       <br />
     </div>
   );
@@ -314,6 +320,7 @@ export default function App() {
     <Router>
       <ScrollToTop />
       <Navbar />  
+      <HeroSection />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/frontend" element={<Frontend />} />
@@ -396,13 +403,16 @@ export default function App() {
         <Route path="/typescript-quiz" element={<TypeScriptQuiz />} />
         <Route path="/docker-quiz" element={<DockerQuiz />} />
         <Route path="/javascript-quiz" element={<JavaScriptQuiz />} />
-        <Route path="/javascript-guide" element={<ProductDescription />} /> 
+        <Route path="/privacy" element={<PrivacyPolicy />} />
+        <Route path="/terms" element={<TermsOfService />} />
+        <Route path="/contact" element={<ContactUs />} />
+       {/* <Route path="/javascript-guide" element={<ProductDescription />} /> 
         <Route path="/python-basics" element={<PythonBasics />} />
         <Route path="/react-handbook" element={<ReactHandbook />} /> 
         <Route path="/nodejs-essentials" element={<NodejsEssentials />} />
-        <Route path="/sql-fundamentals" element={<SqlFundamentals />} />
+        <Route path="/sql-fundamentals" element={<SqlFundamentals />} />*/}
       </Routes>
-      
+      <Footer />
     </Router>
   );
 }

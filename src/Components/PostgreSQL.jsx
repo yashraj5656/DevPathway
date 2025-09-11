@@ -94,7 +94,7 @@ export default function PostgreSQL() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">PostgreSQL Roadmap</h1>
       <p className="frontend-description">
         Follow these steps to master PostgreSQL and become skilled in relational databases and advanced data querying.

@@ -57,7 +57,7 @@ export default function FrontendProjects() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">Frontend Project Ideas</h1>
       <p className="frontend-description">
         Explore these project ideas to practice your frontend skills and build an impressive portfolio.

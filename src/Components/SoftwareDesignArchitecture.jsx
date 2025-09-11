@@ -93,7 +93,7 @@ export default function SoftwareDesignArchitecture() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">Software Design & Architecture Roadmap</h1>
       <p className="frontend-description">
         Follow these steps to master software design principles, architecture patterns, and build scalable, maintainable systems.

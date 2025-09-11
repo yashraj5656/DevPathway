@@ -56,7 +56,7 @@ export default function SQLTheoryQuestions() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">SQL Theory Interview Questions</h1>
       <p className="frontend-description">
         Important theoretical SQL questions covering database design, optimization, security, and advanced concepts.

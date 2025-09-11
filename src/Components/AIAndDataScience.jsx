@@ -6,7 +6,7 @@ export default function AIAndDataScience() {
     {
       step: "Step 1: Build a Strong Foundation",
       items: [
-        "Learn Python programming thoroughly",
+        "Learn Python prOramming thoroughly",
         "Familiarize with essential libraries: NumPy, pandas, Matplotlib",
         "Understand Git & Version Control",
         "Work on basic coding skills & problem-solving"
@@ -94,7 +94,7 @@ export default function AIAndDataScience() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">AI and Data Science Roadmap</h1>
       <p className="frontend-description">
         A structured path to learn Artificial Intelligence and Data Science, from foundations to advanced deployment.

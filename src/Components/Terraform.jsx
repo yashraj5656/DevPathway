@@ -50,7 +50,7 @@ export default function Terraform() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">Terraform Roadmap</h1>
       <p className="frontend-description">
         Learn Terraform step by step to provision and manage your infrastructure efficiently using code.

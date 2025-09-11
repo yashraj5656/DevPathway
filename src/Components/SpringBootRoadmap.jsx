@@ -93,7 +93,7 @@ export default function SpringBootRoadmap() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">Spring Boot Developer Roadmap</h1>
       <p className="frontend-description">
         Follow these steps to master Spring Boot for building robust, scalable, and secure web applications and microservices.

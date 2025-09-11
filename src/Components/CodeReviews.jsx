@@ -74,7 +74,7 @@ export default function CodeReviews() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">Code Review Best Practices</h1>
       <p className="frontend-description">
         Use these practices to maintain clean, maintainable, and secure code in your projects.

@@ -96,7 +96,7 @@ export default function MLOps() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">MLOps Roadmap</h1>
       <p className="frontend-description">
         Follow these steps to master MLOps, from building ML pipelines to deploying and monitoring machine learning models in production.

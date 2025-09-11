@@ -3,7 +3,7 @@ import './ProductDescription.css'; // Reuse the same CSS file for consistency
 
 const PythonBasics = () => {
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">📖 Python Basics</h1>
 
       {/* Product Description */}

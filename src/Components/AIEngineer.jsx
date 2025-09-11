@@ -86,7 +86,7 @@ export default function AIEngineer() {
   ];
 
   return (
-    <div className="frontend-container">
+    <div className="O">
       <h1 className="frontend-title">AI Engineer Roadmap</h1>
       <p className="frontend-description">
         Follow these steps to become an AI Engineer capable of building intelligent systems and deploying machine learning models.
