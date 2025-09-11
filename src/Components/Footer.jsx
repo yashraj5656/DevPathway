@@ -1,7 +1,6 @@
 import React from "react";
 import "./Footer.css";
 import "./PrivacyPolicy";
-import { Link } from "react-router-dom";
 import { FaTwitter, FaLinkedin, FaInstagram, FaYoutube } from "react-icons/fa";
 
 export default function Footer() {
@@ -28,7 +27,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Quick Links */}
+        {/* Quick Links 
         <div className="footer-links">
           <h4>Quick Links</h4>
           <ul>
@@ -39,7 +38,7 @@ export default function Footer() {
             <li><Link to="/mongodb">MongoDB</Link></li>
             <li><Link to="/linux">Linux</Link></li>
           </ul>
-        </div>
+        </div>*/}
 
         {/* Social Links */}
         <div className="footer-social" style={{marginRight:"44rem"}}>

@@ -1,3 +1,4 @@
+
 .footer {
   background-color: #000;
   color: #00cba9;
@@ -7,14 +8,15 @@
   font-family: 'Orbitron', sans-serif;
   box-shadow: 0 -2px 20px rgba(0, 203, 169, 0.15);
   margin-right: 2rem;
+  box-sizing: border-box; /* Ensure padding doesn't cause overflow */
 }
 
 .footer-content {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   gap: 2rem;
   margin-right: 2rem;
+  box-sizing: border-box;
 }
 
 .footer-brand h2 {
@@ -82,7 +84,7 @@
   gap: 1rem;
   margin-right: 1.7rem;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: raw;
 }
 
 .footer-social a {
@@ -116,78 +118,33 @@
   text-shadow: 0 0 10px #00cba9, 0 0 20px rgba(0, 203, 169, 0.7);
 }
 
-/* 📱 Mobile responsiveness */
+/* 📱 Mobile responsiveness for tablets and larger phones */
 @media (max-width: 768px) {
   .footer {
     padding: 1.5rem;
-    margin-right: 0; /* Remove margin-right to avoid horizontal scroll */
+    margin-right: 0; /* Prevent horizontal overflow */
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .footer-content {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: left;
+    text-align: left;
     gap: 1.5rem;
-    margin-right: 0; /* Remove margin-right to fit mobile screens */
+    margin-right: 0;
   }
 
   .footer-brand h2 {
-    font-size: 1.8rem; /* Slightly smaller heading for tablets */
+    font-size: 1.6rem; /* Smaller heading for better fit */
   }
 
   .footer-brand p {
-    font-size: 0.9rem; /* Slightly smaller for better fit */
+    font-size: 0.85rem; /* Adjusted for readability */
+    line-height: 1.4;
   }
 
   .footer-features li {
-    font-size: 0.85rem; /* Adjust font size for readability */
-  }
-
-  .footer-links h4,
-  .footer-social h4 {
-    font-size: 1.1rem; /* Slightly smaller headings */
-  }
-
-  .footer-links a {
-    font-size: 0.85rem; /* Adjust link font size */
-  }
-
-  .footer-social .social-icons {
-    flex-direction: row; /* Horizontal icons for better mobile display */
-    gap: 0.8rem;
-    margin-right: 0; /* Remove margin-right for centering */
-  }
-
-  .footer-social a {
-    font-size: 1.5rem; /* Smaller icons for mobile */
-  }
-
-  .footer-bottom {
-    font-size: 0.8rem; /* Slightly smaller for mobile */
-    padding-top: 0.8rem;
-  }
-}
-
-/* 📱 Extra small screens (e.g., phones below 480px) */
-@media (max-width: 480px) {
-  .footer {
-    padding: 1rem; /* Further reduce padding for smaller screens */
-  }
-
-  .footer-content {
-    gap: 1rem; /* Reduce gap for compact layout */
-  }
-
-  .footer-brand h2 {
-    font-size: 1.5rem; /* Smaller heading for small screens */
-  }
-
-  .footer-brand p {
-    font-size: 0.85rem; /* Further reduce for small screens */
-  }
-
-  .footer-features li {
-    font-size: 0.8rem; /* Smaller for better fit */
+    font-size: 0.8rem; /* Smaller for mobile */
   }
 
   .footer-links h4,
@@ -199,16 +156,114 @@
     font-size: 0.8rem; /* Smaller links */
   }
 
+  .footer-social .social-icons {
+    flex-direction: row; /* Horizontal for mobile */
+    gap: 0.8rem;
+    margin-right: 0;
+    justify-content: center;
+  }
+
   .footer-social a {
-    font-size: 1.3rem; /* Smaller icons for very small screens */
+    font-size: 1.4rem; /* Smaller icons */
   }
 
   .footer-bottom {
-    font-size: 0.75rem; /* Smallest font for footer text */
-    margin-top: 1.5rem; /* Adjust margin */
+    font-size: 0.75rem;
+    padding-top: 0.8rem;
+    margin-top: 1.5rem;
   }
 
   .footer-bottom a {
-    margin: 0 0.3rem; /* Reduce margin between links */
+    margin: 0 0.3rem;
+  }
+}
+
+/* 📱 Smaller phones */
+@media (max-width: 480px) {
+  .footer {
+    padding: 1rem;
+  }
+
+  .footer-content {
+    gap: 1rem;
+  }
+
+  .footer-brand h2 {
+    font-size: 1.4rem;
+  }
+
+  .footer-brand p {
+    font-size: 0.8rem;
+  }
+
+  .footer-features li {
+    font-size: 0.75rem;
+  }
+
+  .footer-links h4,
+  .footer-social h4 {
+    font-size: 0.9rem;
+  }
+
+  .footer-links a {
+    font-size: 0.75rem;
+  }
+
+  .footer-social a {
+    font-size: 1.2rem;
+  }
+
+  .footer-bottom {
+    font-size: 0.7rem;
+    margin-top: 1rem;
+  }
+}
+
+/* 📱 Very small screens (e.g., older phones) */
+@media (max-width: 360px) {
+  .footer {
+    padding: 0.8rem;
+  }
+
+  .footer-content {
+    gap: 0.8rem;
+  }
+
+  .footer-brand h2 {
+    font-size: 1.2rem;
+  }
+
+  .footer-brand p {
+    font-size: 0.75rem;
+  }
+
+  .footer-features li {
+    font-size: 0.7rem;
+  }
+
+  .footer-links h4,
+  .footer-social h4 {
+    font-size: 0.85rem;
+  }
+
+  .footer-links a {
+    font-size: 0.7rem;
+  }
+
+  .footer-social .social-icons {
+    gap: 0.5rem;
+  }
+
+  .footer-social a {
+    font-size: 1rem;
+  }
+
+  .footer-bottom {
+    font-size: 0.65rem;
+    margin-top: 0.8rem;
+  }
+
+  .footer-bottom a {
+    margin: 0 0.2rem;
   }
 }
