@@ -99,7 +99,7 @@ const games = [
     title: "Quiz Games",
     items: [
       { url: "https://zyqentrapy.netlify.app", image: "PY.png" },
-      { url: "https://yourdomain.com/bash-quiz", image: "BA.png" },
+      { url: "https://zyqentrabash.netlify.app", image: "BA.png" },
       { url: "https://yourdomain.com/typescript-quiz", image: "TSP.png" },
       { url: "https://yourdomain.com/docker-quiz", image: "DK.png" },
       { url: "https://zyqentrajs.netlify.app", image: "JSP.png" },
