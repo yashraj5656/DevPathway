@@ -100,7 +100,7 @@ const games = [
     items: [
       { url: "https://zyqentrapy.netlify.app", image: "PY.png" },
       { url: "https://zyqentrabash.netlify.app", image: "BA.png" },
-      { url: "https://zyqentratypescript.netlify.app", image: "TSP.png" },
+      { url: "https://zyqentratypescript.netlify.app", image: "Rust.png" },
       { url: "https://zyqentradocker.netlify.app", image: "DK.png" },
       { url: "https://zyqentrajs.netlify.app", image: "JSP.png" },
     ],
