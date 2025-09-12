@@ -76,6 +76,7 @@
   margin: 0 auto;
   line-height: 1.6;
   font-weight: 400;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   background: linear-gradient(90deg, #ffffff, #a8fff5, #00cba9);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
