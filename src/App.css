@@ -66,12 +66,12 @@ body {
 /* Scrollable Sections */
 .sections,
 .ebook {
-  max-height: 300px;
+  max-height: 500px;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   padding: 1rem;
   border-radius: 8px;
-  background: rgba(0, 203, 169, 0.1);
+  background: #000;
   margin-bottom: 1rem;
   scrollbar-width: none; /* Firefox */
 }
@@ -99,9 +99,14 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 /* Card Styles */
+
+
+
 .card {
   padding: 0.75rem;
   border-radius: 8px;
