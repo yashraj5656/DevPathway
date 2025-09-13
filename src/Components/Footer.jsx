@@ -47,9 +47,9 @@ export default function Footer() {
           <h4>Follow Us</h4>
           <div className="social-icons">
             <a href="https://github.com/" target="_blank" rel="noreferrer"><FaInstagram /></a>
-            <a href="https://twitter.com/" target="_blank" rel="noreferrer"><FaYoutube /></a>
+            <a href="https://www.youtube.com/channel/UCxJwN4LsUyyJIGH5fJQ6Xhw" target="_blank" rel="noreferrer"><FaYoutube /></a>
             <a href="https://linkedin.com/" target="_blank" rel="noreferrer"><FaLinkedin /></a>
-            <a href="https://discord.com/" target="_blank" rel="noreferrer"><FaTwitter /></a>
+            <a href="https://x.com/zyqentra" target="_blank" rel="noreferrer"><FaTwitter /></a>
           </div>
         </div>
       </div>
