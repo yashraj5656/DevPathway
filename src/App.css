@@ -66,9 +66,6 @@ body {
 /* Scrollable Sections */
 .sections,
 .ebook {
-  max-height: 900px;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
   padding: 1rem;
   border-radius: 8px;
   background: #000;
@@ -78,9 +75,9 @@ body {
 
 
 .games {
-  max-height: 300px;
+  /*max-height: 300px;
   overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch;*/
   padding: 1rem;
   border-radius: 8px;
   background: #000;
@@ -88,11 +85,11 @@ body {
   scrollbar-width: none; /* Firefox */
 }
 
-.sections::-webkit-scrollbar,
+/*.sections::-webkit-scrollbar,
 .games::-webkit-scrollbar,
 .ebook::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
-}
+  display: none; 
+}*/
 
 /* Grid Layout for Cards */
 .card-grid {
