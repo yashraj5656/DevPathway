@@ -1,6 +1,8 @@
 import React from "react";
 import "./Footer.css";
 import "./PrivacyPolicy";
+import "./TermsOfService";
+import "./ContactUs";
 import { FaTwitter, FaLinkedin, FaInstagram, FaYoutube } from "react-icons/fa";
 
 export default function Footer() {
