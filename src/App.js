@@ -96,7 +96,7 @@ import HeroSection from "./Components/HeroSection";
 
 const games = [
   {
-    title: "Quiz Games",
+    title: "Learning Apps",
     items: [
       { url: "https://zyqentrapy.netlify.app", image: "PY.png" },
       { url: "https://zyqentrabash.netlify.app", image: "BA.png" },
