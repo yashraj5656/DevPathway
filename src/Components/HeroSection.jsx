@@ -1,6 +1,7 @@
 import React, { useEffect} from "react";
 import { Link } from "react-router-dom";
 import "./HeroSection.css";
+import { motion } from "framer-motion";
 
 export default function HeroSection() {
   
@@ -68,9 +69,14 @@ export default function HeroSection() {
       <canvas id="stars"></canvas>
 
       <div className="hero-content">
-        <h1>
-          Welcome to <span>Zyqentra</span>
-        </h1>
+      <motion.h1
+  className="ZyqentraH"
+  initial={{ y: -200 }}
+  animate={{ y: 0 }}
+  transition={{ type: "spring", stiffness: 80, damping: 12 }}
+>
+  Welcome to <span>Zyqentra</span>
+</motion.h1>
         <p>
   Empower your developer journey with structured roadmaps, real-world projects, 
   and <strong>interactive learning apps</strong> that make coding fun, practical, and engaging.  
@@ -84,7 +90,7 @@ export default function HeroSection() {
           <Link to="/" className="btn-primary">
             🚀 Start Learning
           </Link>
-          <Link to="/community" className="btn-secondary">
+          <Link to="https://www.instagram.com/zyqentra/" className="btn-secondary">
             🌐 Join Community
           </Link>
         </div>
