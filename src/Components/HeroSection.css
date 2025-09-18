@@ -173,7 +173,7 @@
 /* 📱 Mobile responsiveness for tablets and larger phones */
 @media (max-width: 768px) {
   .hero {
-    min-height: 60vh; /* Reduced height for mobile */
+    min-height: 70vh; /* Reduced height for mobile */
     padding: 1.5rem;
   }
 
@@ -230,7 +230,7 @@
 /* 📱 Smaller phones */
 @media (max-width: 480px) {
   .hero {
-    min-height: 50vh; /* Further reduce height */
+    min-height: 70vh; /* Further reduce height */
     padding: 1rem;
   }
 
@@ -249,7 +249,7 @@
   }
 
   .hero p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     max-width: 95%;
   }
 
@@ -280,7 +280,7 @@
 /* 📱 Very small screens (e.g., older phones) */
 @media (max-width: 360px) {
   .hero {
-    min-height: 45vh;
+    min-height: 70vh;
     padding: 0.8rem;
   }
 
@@ -299,7 +299,7 @@
   }
 
   .hero p {
-    font-size: 2px;         /* This is extremely small—maybe you meant 12px or 16px? */
+    font-size: 0.8rem;         /* This is extremely small—maybe you meant 12px or 16px? */
     max-width: 100%;        /* This is fine */
             /* 'hidd' is not a valid value; use 'none' to hide the element */
   }
