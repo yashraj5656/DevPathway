@@ -1,14 +1,9 @@
-import React, { useEffect} from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./HeroSection.css";
 import { motion } from "framer-motion";
 
 export default function HeroSection() {
-  
-
-
-
-
   // Starfield background
   useEffect(() => {
     const canvas = document.getElementById("stars");
@@ -69,36 +64,48 @@ export default function HeroSection() {
       <canvas id="stars"></canvas>
 
       <div className="hero-content">
-      <motion.h1
-  className="ZyqentraH"
-  initial={{ y: -200 }}
-  animate={{ y: 0 }}
-  transition={{ type: "spring", stiffness: 80, damping: 12 }}
->
-  Welcome to <span>Zyqentra</span>
-</motion.h1>
-        <p>
-  Empower your developer journey with structured roadmaps, real-world projects, 
-  and <strong>interactive learning apps</strong> that make coding fun, practical, and engaging.  
-  Whether you’re just starting out or sharpening advanced skills, Zyqentra guides you 
-  step by step to mastery.
-</p>
+        <motion.h1
+          className="ZyqentraH"
+          initial={{ y: -200 }}
+          animate={{ y: 0 }}
+          transition={{ type: "spring", stiffness: 80, damping: 12 }}
+        >
+          Welcome to <span>Zyqentra</span>
+        </motion.h1>
+        <motion.p
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
+        >
+          Empower your developer journey with structured roadmaps, real-world projects, 
+          and <strong>interactive learning apps</strong> that make coding fun, practical, and engaging.  
+          Whether you’re just starting out or sharpening advanced skills, Zyqentra guides you 
+          step by step to mastery.
+        </motion.p>
 
-
-
-        <div className="hero-buttons">
+        <motion.div 
+          className="hero-buttons"
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6, delay: 0.6, ease: "easeOut" }}
+        >
           <Link to="/" className="btn-primary">
             🚀 Start Learning
           </Link>
           <Link to="https://www.instagram.com/zyqentra/" className="btn-secondary">
             🌐 Join Community
           </Link>
-        </div>
+        </motion.div>
       </div>
-        {/* Scroll Down Arrow */}
-      <div className="scroll-down">
-          <span></span>
-        </div>
+      {/* Scroll Down Arrow 
+      <motion.div 
+        className="scroll-down"
+        initial={{ opacity: 0, y: 1 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 1, repeat: Infinity, repeatType: "reverse", ease: "easeInOut" }}
+      >
+        <span></span>
+      </motion.div>*/}
     </section>
   );
 }

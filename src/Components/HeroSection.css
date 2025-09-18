@@ -186,6 +186,7 @@
     font-size: 2.2rem; /* Smaller heading */
     line-height: 1.2;
     letter-spacing: 0.5px;
+    margin-top: 2rem;
   }
 
   .hero h1 span {
@@ -196,14 +197,12 @@
     font-size: 1rem;
     max-width: 90%; /* Prevent text overflow */
     line-height: 1.4;
-    display: none;
   }
 
   .hero-buttons {
     flex-direction: column; /* Stack buttons vertically */
     gap: 1rem;
     margin-top: 1.5rem;
-    display: none;
   }
 
   .btn-primary,
@@ -240,6 +239,7 @@
   }
 
   .hero h1 {
+    margin-top: 2rem;
     font-size: 1.8rem; /* Smaller heading */
     line-height: 1.1;
   }
@@ -256,7 +256,6 @@
   .hero-buttons {
     gap: 0.8rem;
     margin-top: 1rem;
-    display: none;
   }
 
   .btn-primary,
@@ -290,6 +289,7 @@
   }
 
   .hero h1 {
+    margin-top: 2rem;
     font-size: 1.8rem;
     line-height: 1;
   }
@@ -301,7 +301,7 @@
   .hero p {
     font-size: 2px;         /* This is extremely small—maybe you meant 12px or 16px? */
     max-width: 100%;        /* This is fine */
-    display: none;          /* 'hidd' is not a valid value; use 'none' to hide the element */
+            /* 'hidd' is not a valid value; use 'none' to hide the element */
   }
   
 
