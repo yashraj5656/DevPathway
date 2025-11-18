@@ -92,7 +92,7 @@ export default function HeroSection() {
           <Link to="/" className="btn-primary">
             🚀 Start Learning
           </Link>
-          <Link to="https://www.instagram.com/zyqentra/" className="btn-secondary">
+          <Link to="https://zyqentranexus.netlify.app/" className="btn-secondary">
             🌐 Join Community
           </Link>
         </motion.div>
